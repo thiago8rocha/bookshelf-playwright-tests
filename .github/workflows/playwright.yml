@@ -102,7 +102,13 @@ jobs:
       - name: Run Playwright tests (excluding visual and accessibility)
         run: npx playwright test tests/auth tests/books tests/dashboard tests/e2e tests/network
 
+      - name: Update Linux visual snapshots
+        if: always()
+        run: npx playwright test tests/visual --update-snapshots all
+        continue-on-error: true
+
       - name: Commit updated Linux snapshots
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -112,14 +118,15 @@ jobs:
         continue-on-error: true
 
       - name: Run visual regression tests
+        if: always()
         run: npx playwright test tests/visual
         continue-on-error: true
 
       - name: Run accessibility tests
+        if: always()
         run: npx playwright test tests/accessibility
         continue-on-error: true
 
-      # ── Allure Report ────────────────────────────────────────────────────────
       - name: Generate Allure report
         if: always()
         run: npx allure generate --output allure-report
@@ -141,7 +148,6 @@ jobs:
           publish_branch: gh-pages
           destination_dir: allure-report
 
-      # ── Playwright HTML report (fallback) ────────────────────────────────────
       - name: Upload Playwright HTML report
         if: always()
         uses: actions/upload-artifact@v4
