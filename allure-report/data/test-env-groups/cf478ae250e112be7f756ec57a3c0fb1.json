@@ -1,1 +1,1 @@
-{"id":"cf478ae250e112be7f756ec57a3c0fb1","fullName":"visual/visual.spec.ts:83:7","name":"login page on mobile viewport matches snapshot","status":"failed","testResultsByEnv":{"default":"3e7ce5941bd99ba4139cb24307a650c0"}}
+{"id":"cf478ae250e112be7f756ec57a3c0fb1","fullName":"visual/visual.spec.ts:83:7","name":"login page on mobile viewport matches snapshot","status":"passed","testResultsByEnv":{"default":"9c4fe45d1eb64025d9ba1197f24a7409"}}

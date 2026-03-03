@@ -1,1 +1,1 @@
-{"id":"dd9f91800190bf34ca2d4df7876630ee","fullName":"visual/visual.spec.ts:115:9","name":"dashboard with mixed book statuses matches snapshot","status":"failed","testResultsByEnv":{"default":"06c93956efd6174620f429c01c3c5992"}}
+{"id":"dd9f91800190bf34ca2d4df7876630ee","fullName":"visual/visual.spec.ts:115:9","name":"dashboard with mixed book statuses matches snapshot","status":"passed","testResultsByEnv":{"default":"d8b21822bf5c38c47662200471070bf9"}}
