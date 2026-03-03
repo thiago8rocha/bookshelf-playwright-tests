@@ -1,0 +1,27 @@
+{
+  "name": "bookshelf-playwright",
+  "version": "1.0.0",
+  "description": "Playwright E2E test suite for Bookshelf application",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --grep @ui",
+    "test:auth": "playwright test tests/auth",
+    "test:books": "playwright test tests/books",
+    "test:dashboard": "playwright test tests/dashboard",
+    "test:e2e": "playwright test tests/e2e",
+    "test:visual": "playwright test tests/visual",
+    "test:network": "playwright test tests/network",
+    "test:a11y": "playwright test --grep @a11y",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "snapshots:update": "playwright test tests/visual --update-snapshots all"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@faker-js/faker": "^8.3.1",
+    "axe-playwright": "^2.0.1",
+    "dotenv": "^16.4.1"
+  }
+}
