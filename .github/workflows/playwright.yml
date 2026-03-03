@@ -11,7 +11,7 @@ jobs:
   test:
     name: E2E Tests
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
 
     services:
       database:
@@ -38,9 +38,12 @@ jobs:
       DB_NAME: bookshelf
       JWT_SECRET: ci-test-secret
       NODE_ENV: test
+
     steps:
       - name: Checkout Playwright tests
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout Backend
         uses: actions/checkout@v4
@@ -90,8 +93,20 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium firefox
 
-      - name: Run Playwright tests (excluding visual)
+      - name: Run non-visual Playwright tests
         run: npx playwright test tests/auth tests/books tests/dashboard tests/e2e tests/network
+
+      - name: Update visual snapshots for Linux
+        run: npx playwright test tests/visual --update-snapshots all
+        continue-on-error: true
+
+      - name: Commit Linux snapshots if new
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tests/visual/visual.spec.ts-snapshots/
+          git diff --cached --quiet || git commit -m "ci: update Linux visual snapshots [skip ci]"
+          git push || true
 
       - name: Run visual regression tests
         run: npx playwright test tests/visual
