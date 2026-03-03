@@ -1,1 +1,1 @@
-{"id":"73666758730a6de048187f4330e21211","fullName":"visual/visual.spec.ts:170:9","name":"dashboard on mobile viewport matches snapshot","status":"failed","testResultsByEnv":{"default":"c112db93851cb44a4958432109c9e3f9"}}
+{"id":"73666758730a6de048187f4330e21211","fullName":"visual/visual.spec.ts:170:9","name":"dashboard on mobile viewport matches snapshot","status":"passed","testResultsByEnv":{"default":"e391b13ab75dab5640253116a4c9e975"}}

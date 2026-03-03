@@ -1,1 +1,1 @@
-{"id":"9c5139c25f77fc72ec9468e2a5b61d94","fullName":"books/books-delete.spec.ts:58:7","name":"cancel deletion keeps the book in list","status":"passed","testResultsByEnv":{"default":"75a54e190180b57d22dc9e67c3d6a013"}}
+{"id":"9c5139c25f77fc72ec9468e2a5b61d94","fullName":"books/books-delete.spec.ts:58:7","name":"cancel deletion keeps the book in list","status":"passed","testResultsByEnv":{"default":"7d0f9ac4285f051316e24fd625eb2ba0"}}
