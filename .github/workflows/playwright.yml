@@ -5,7 +5,7 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
-  workflow_dispatch:  # permite rodar manualmente pela interface do GitHub
+  workflow_dispatch:
 
 jobs:
   test:
@@ -66,9 +66,10 @@ jobs:
         working-directory: backend
         run: npm ci
 
-      - name: Start backend
+      - name: Start backend server
         working-directory: backend
         run: |
+          npm run build
           npm run start &
           npx wait-on http://localhost:3000/health --timeout 30000
 
