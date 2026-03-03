@@ -91,7 +91,7 @@ jobs:
         run: npx playwright install --with-deps chromium firefox
 
       - name: Run Playwright tests (excluding visual)
-        run: npx playwright test --ignore-glob="tests/visual/*"
+        run: npx playwright test tests/auth tests/books tests/dashboard tests/e2e tests/network
 
       - name: Run visual regression tests
         run: npx playwright test tests/visual
