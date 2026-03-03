@@ -65,12 +65,12 @@ jobs:
 
       - name: Run database migrations
         working-directory: backend
-        run: npm run migration:run || npx typeorm migration:run -d src/data-source.ts
+        run: npm run migrate
 
       - name: Start backend
         working-directory: backend
         run: |
-          npm run start:prod &
+          npm run start:dev &
           npx wait-on http://localhost:3000/health --timeout 30000
 
       - name: Install frontend dependencies
