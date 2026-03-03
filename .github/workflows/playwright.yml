@@ -41,7 +41,7 @@ jobs:
       - name: Checkout Backend
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/bookshelf-backend
+          repository: ${{ github.repository_owner }}/bookshelf-api
           path: backend
           token: ${{ secrets.GITHUB_TOKEN }}
 
