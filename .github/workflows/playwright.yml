@@ -5,6 +5,7 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  workflow_dispatch:  # permite rodar manualmente pela interface do GitHub
 
 jobs:
   test:
@@ -48,7 +49,7 @@ jobs:
       - name: Checkout Frontend
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/bookshelf-frontend
+          repository: ${{ github.repository_owner }}/bookshelf-fronentd
           path: frontend
           token: ${{ secrets.GITHUB_TOKEN }}
 
