@@ -106,6 +106,10 @@ jobs:
         run: npx playwright test tests/visual --update-snapshots all
         continue-on-error: true
 
+      - name: Run visual regression tests
+        run: npx playwright test tests/visual
+        continue-on-error: true
+
       - name: Commit updated Linux snapshots
         run: |
           git config user.name "github-actions[bot]"
@@ -126,7 +130,7 @@ jobs:
       # ── Allure Report ────────────────────────────────────────────────────────
       - name: Generate Allure report
         if: always()
-        run: npx allure generate --output allure-report allure-results
+        run: npx allure generate --output allure-report
 
       - name: Upload Allure report as artifact
         if: always()
