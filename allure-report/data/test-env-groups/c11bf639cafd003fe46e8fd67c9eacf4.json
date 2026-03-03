@@ -1,0 +1,1 @@
+{"id":"c11bf639cafd003fe46e8fd67c9eacf4","fullName":"auth/session.spec.ts:60:7","name":"session is isolated between browser contexts","status":"passed","testResultsByEnv":{"default":"c289ed54ed58b97685e698c26eeecdf3"}}

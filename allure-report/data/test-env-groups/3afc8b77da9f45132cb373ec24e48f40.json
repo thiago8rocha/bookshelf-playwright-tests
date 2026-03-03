@@ -1,0 +1,1 @@
+{"id":"3afc8b77da9f45132cb373ec24e48f40","fullName":"auth/login.spec.ts:73:7","name":"blocks submit with empty password — stays on login","status":"passed","testResultsByEnv":{"default":"3eef9778b6e7a2b8b1167db1141f670f"}}
