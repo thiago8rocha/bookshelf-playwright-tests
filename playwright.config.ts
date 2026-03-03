@@ -1,6 +1,5 @@
 import { defineConfig, devices } from '@playwright/test'
 import * as dotenv from 'dotenv'
-
 dotenv.config()
 
 export default defineConfig({
@@ -13,8 +12,8 @@ export default defineConfig({
     ['list'],
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
     ['json', { outputFile: 'playwright-report/results.json' }],
+    ['allure-playwright', { outputFolder: 'allure-results' }],
   ],
-
   use: {
     baseURL: process.env.BASE_URL || 'http://localhost:5173',
     trace: 'on-first-retry',
@@ -23,7 +22,6 @@ export default defineConfig({
     actionTimeout: 10_000,
     navigationTimeout: 15_000,
   },
-
   projects: [
     {
       name: 'chromium',
@@ -39,7 +37,6 @@ export default defineConfig({
       testMatch: ['**/auth/**', '**/dashboard/**', '**/visual/**'],
     },
   ],
-
   expect: {
     // Visual regression threshold — 0.2% pixel difference allowed
     toHaveScreenshot: {

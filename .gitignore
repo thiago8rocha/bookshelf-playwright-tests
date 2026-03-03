@@ -3,3 +3,5 @@ playwright-report/
 test-results/
 .env
 *.local
+allure-results/
+allure-report/
