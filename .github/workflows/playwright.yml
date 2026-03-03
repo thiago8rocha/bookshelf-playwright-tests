@@ -31,10 +31,13 @@ jobs:
     env:
       BASE_URL: http://localhost:5173
       API_URL: http://localhost:3000
-      DATABASE_URL: postgresql://bookshelf:bookshelf@localhost:5432/bookshelf
+      DB_HOST: localhost
+      DB_PORT: 5432
+      DB_USER: bookshelf
+      DB_PASSWORD: bookshelf
+      DB_NAME: bookshelf
       JWT_SECRET: ci-test-secret
       NODE_ENV: test
-
     steps:
       - name: Checkout Playwright tests
         uses: actions/checkout@v4
@@ -62,10 +65,6 @@ jobs:
       - name: Install backend dependencies
         working-directory: backend
         run: npm ci
-
-      - name: Run database migrations
-        working-directory: backend
-        run: npx ts-node ./node_modules/.bin/typeorm migration:run -d src/config/database.ts
 
       - name: Start backend
         working-directory: backend
