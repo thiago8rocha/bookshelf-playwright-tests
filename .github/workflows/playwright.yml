@@ -69,7 +69,7 @@ jobs:
       - name: Start backend
         working-directory: backend
         run: |
-          npm run start:dev &
+          npm run start &
           npx wait-on http://localhost:3000/health --timeout 30000
 
       - name: Install frontend dependencies
