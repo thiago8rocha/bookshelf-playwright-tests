@@ -7,6 +7,11 @@ on:
     branches: [master]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   test:
     name: E2E Tests
@@ -42,8 +47,6 @@ jobs:
     steps:
       - name: Checkout Playwright tests
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout Backend
         uses: actions/checkout@v4
@@ -69,12 +72,15 @@ jobs:
         working-directory: backend
         run: npm ci
 
-      - name: Start backend server
+      - name: Build backend
+        working-directory: backend
+        run: npm run build
+
+      - name: Start backend
         working-directory: backend
         run: |
-          npm run build
           npm run start &
-          npx wait-on http://localhost:3000/health --timeout 30000
+          npx wait-on http://localhost:3000/health --timeout 60000
 
       - name: Install frontend dependencies
         working-directory: frontend
@@ -93,26 +99,54 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium firefox
 
-      - name: Run non-visual Playwright tests
-        run: npx playwright test --grep-invert "Visual Regression|Accessibility"
+      - name: Run Playwright tests (excluding visual and accessibility)
+        run: npx playwright test tests/auth tests/books tests/dashboard tests/e2e tests/network
 
-      - name: Update visual snapshots for Linux
+      - name: Update Linux visual snapshots
         run: npx playwright test tests/visual --update-snapshots all
         continue-on-error: true
 
-      - name: Commit Linux snapshots if new
+      - name: Commit updated Linux snapshots
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add tests/visual/visual.spec.ts-snapshots/
-          git diff --cached --quiet || git commit -m "ci: update Linux visual snapshots [skip ci]"
-          git push || true
+          git add tests/**/*.png || true
+          git diff --staged --quiet || git commit -m "ci: update Linux visual snapshots [skip ci]"
+          git push origin master || true
+        continue-on-error: true
 
       - name: Run visual regression tests
         run: npx playwright test tests/visual
         continue-on-error: true
 
-      - name: Upload Playwright report
+      - name: Run accessibility tests
+        run: npx playwright test tests/accessibility
+        continue-on-error: true
+
+      # ── Allure Report ────────────────────────────────────────────────────────
+      - name: Generate Allure report
+        if: always()
+        run: npx allure generate --output allure-report allure-results
+
+      - name: Upload Allure report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report/
+          retention-days: 30
+
+      - name: Deploy Allure report to GitHub Pages
+        if: always() && github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages
+          destination_dir: allure-report
+
+      # ── Playwright HTML report (fallback) ────────────────────────────────────
+      - name: Upload Playwright HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -120,7 +154,7 @@ jobs:
           path: playwright-report/
           retention-days: 14
 
-      - name: Upload visual snapshots (on failure)
+      - name: Upload visual diff on failure
         if: failure()
         uses: actions/upload-artifact@v4
         with:
