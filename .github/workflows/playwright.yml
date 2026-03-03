@@ -65,7 +65,7 @@ jobs:
 
       - name: Run database migrations
         working-directory: backend
-        run: npm run migrate
+        run: npx ts-node ./node_modules/.bin/typeorm migration:run -d src/data-source.ts
 
       - name: Start backend
         working-directory: backend
