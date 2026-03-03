@@ -49,7 +49,7 @@ jobs:
       - name: Checkout Frontend
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/bookshelf-fronentd
+          repository: ${{ github.repository_owner }}/bookshelf-frontend
           path: frontend
           token: ${{ secrets.GITHUB_TOKEN }}
 
