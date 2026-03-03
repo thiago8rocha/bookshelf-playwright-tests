@@ -1,1 +1,1 @@
-{"id":"45ee69426ae335ea189ed4dcc30c195c","fullName":"auth/register.spec.ts:75:7","name":"shows error when API is unreachable","status":"passed","testResultsByEnv":{"default":"f4cd63b994cf2550530ef1702dae3fb3"}}
+{"id":"45ee69426ae335ea189ed4dcc30c195c","fullName":"auth/register.spec.ts:75:7","name":"shows error when API is unreachable","status":"passed","testResultsByEnv":{"default":"3b4c33e354547365bf1e1679d19f535e"}}
