@@ -127,9 +127,29 @@ jobs:
         run: npx playwright test tests/accessibility
         continue-on-error: true
 
+      # ── Restaurar histórico do Allure do gh-pages ─────────────────────────
+      - name: Restore Allure history
+        if: always()
+        run: |
+          if git ls-remote --exit-code origin gh-pages > /dev/null 2>&1; then
+            git clone --depth=1 --branch gh-pages \
+              https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git \
+              gh-pages-branch
+            if [ -d "gh-pages-branch/allure-report/history" ]; then
+              cp -r gh-pages-branch/allure-report/history allure-results/history
+              echo "Allure history restored"
+            else
+              echo "No previous history found — first run"
+            fi
+            rm -rf gh-pages-branch
+          else
+            echo "gh-pages branch does not exist yet — first run"
+          fi
+        continue-on-error: true
+
       - name: Generate Allure report
         if: always()
-        run: npx allure generate --output allure-report
+        run: npx allure generate --output allure-report allure-results
 
       - name: Upload Allure report as artifact
         if: always()

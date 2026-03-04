@@ -6,6 +6,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![CI](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Allure](https://img.shields.io/badge/Allure%20Report-GitHub%20Pages-orange?style=for-the-badge)
+[![CI](https://github.com/thiago8rocha/bookshelf-playwright-tests/actions/workflows/playwright.yml/badge.svg)](https://github.com/thiago8rocha/bookshelf-playwright-tests/actions/workflows/playwright.yml)
 
 **237 testes E2E, visual regression e acessibilidade para o sistema BookShelf**
 
