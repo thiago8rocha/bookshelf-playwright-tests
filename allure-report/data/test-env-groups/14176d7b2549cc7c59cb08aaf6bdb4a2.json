@@ -1,1 +1,1 @@
-{"id":"14176d7b2549cc7c59cb08aaf6bdb4a2","fullName":"auth/login.spec.ts:41:7","name":"stays on /login with wrong email","status":"passed","testResultsByEnv":{"default":"6dbf2e8a31d3706579fe979a7866c315"}}
+{"id":"14176d7b2549cc7c59cb08aaf6bdb4a2","fullName":"auth/login.spec.ts:41:7","name":"stays on /login with wrong email","status":"passed","testResultsByEnv":{"default":"ca9c7df64e609ddd96f939f6bd623d6d"}}
