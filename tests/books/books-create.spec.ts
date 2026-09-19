@@ -24,7 +24,7 @@ test.describe('Books — Create', () => {
     await modal.waitForClose()
 
     await expect(page.locator('body')).toContainText(book.title)
-    expect(await dashboard.getTotalBooks()).toBe(before + 1)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(before + 1)
   })
 
   test('creates a book with all fields', async ({ authenticatedPage: page, cleanupBooks }) => {
@@ -53,7 +53,7 @@ test.describe('Books — Create', () => {
     await modal.submit()
     await modal.waitForClose()
 
-    expect(await dashboard.getTotalBooks()).toBe(before + 1)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(before + 1)
   })
 
   test('can create multiple books sequentially', async ({ authenticatedPage: page, cleanupBooks }) => {
@@ -85,7 +85,7 @@ test.describe('Books — Create', () => {
     await expect(modal.modal).toBeVisible()
     await modal.cancel()
 
-    expect(await dashboard.getTotalBooks()).toBe(before)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(before)
   })
 
   test('cannot save without author — modal stays open', async ({ authenticatedPage: page }) => {
@@ -99,7 +99,7 @@ test.describe('Books — Create', () => {
     await expect(modal.modal).toBeVisible()
     await modal.cancel()
 
-    expect(await dashboard.getTotalBooks()).toBe(before)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(before)
   })
 
   test('cancel discards the filled form', async ({ authenticatedPage: page }) => {

@@ -32,7 +32,7 @@ test.describe('Dashboard', () => {
     await createBooks(request, userToken, 3)
     await page.reload()
 
-    expect(await dashboard.getTotalBooks()).toBe(3)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(3)
   })
 
   test('stats by-status reflect book statuses', async ({ authenticatedPage: page, request, userToken }) => {
@@ -59,7 +59,7 @@ test.describe('Dashboard', () => {
 
     // Current user has 0 books
     await page.reload()
-    expect(await dashboard.getTotalBooks()).toBe(0)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(0)
   })
 
   // ─── Empty state ──────────────────────────────────────────────────────────
@@ -81,7 +81,7 @@ test.describe('Dashboard', () => {
     await modal.submit()
     await modal.waitForClose()
 
-    expect(await dashboard.getTotalBooks()).toBe(before + 1)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(before + 1)
   })
 
   test('stats update immediately after deleting a book — no reload needed', async ({ authenticatedPage: page, request, userToken }) => {
@@ -95,7 +95,7 @@ test.describe('Dashboard', () => {
     const deleteModal = new DeleteModal(page)
     await deleteModal.confirm()
 
-    expect(await dashboard.getTotalBooks()).toBe(before - 1)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(before - 1)
   })
 
   // ─── Network interception (Playwright-only) ───────────────────────────────
