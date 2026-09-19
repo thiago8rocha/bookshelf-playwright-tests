@@ -1,1 +1,1 @@
-{"id":"a6e9f2f97e0b5e7acd09aecc5915d9a7","fullName":"e2e/user-journey.spec.ts:8:7","name":"complete journey: register → create → edit → delete → logout @smoke","status":"passed","testResultsByEnv":{"default":"3596ba5b6787461a9c37513e76173415"}}
+{"id":"a6e9f2f97e0b5e7acd09aecc5915d9a7","fullName":"e2e/user-journey.spec.ts:8:7","name":"complete journey: register → create → edit → delete → logout @smoke","status":"passed","testResultsByEnv":{"default":"3f3b31c72ff814eae284d47ba7ea769a"}}
