@@ -37,7 +37,7 @@ test.describe('Books — Delete', () => {
     await deleteModal.confirm()
 
     await expect(page.getByTestId(`book-item-${book.id}`)).not.toBeVisible()
-    expect(await dashboard.getTotalBooks()).toBe(before - 1)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(before - 1)
   })
 
   test('shows empty state after deleting all books', async ({ authenticatedPage: page, request, userToken }) => {
@@ -50,7 +50,7 @@ test.describe('Books — Delete', () => {
     await deleteModal.confirm()
 
     await expect(page.locator('body')).toContainText(/Nenhum livro ainda/i)
-    expect(await dashboard.getTotalBooks()).toBe(0)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(0)
   })
 
   // ─── Negative ────────────────────────────────────────────────────────────

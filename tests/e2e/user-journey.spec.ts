@@ -18,7 +18,7 @@ test.describe('E2E — User Journeys', () => {
     const deleteModal = new DeleteModal(page)
 
     // 2. Dashboard starts empty
-    expect(await dashboard.getTotalBooks()).toBe(0)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(0)
 
     // 3. Create book
     const book = generateBook()
@@ -28,7 +28,7 @@ test.describe('E2E — User Journeys', () => {
     await modal.submit()
     await modal.waitForClose()
     await expect(page.locator('body')).toContainText(book.title)
-    expect(await dashboard.getTotalBooks()).toBe(1)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(1)
 
     // 4. Edit book — get ID from DOM
     const bookItem = page.locator('[data-testid^="book-item-"]').first()
@@ -50,7 +50,7 @@ test.describe('E2E — User Journeys', () => {
     await deleteModal.waitForOpen()
     await deleteModal.confirm()
     await expect(page.locator('body')).toContainText(/Nenhum livro ainda/i)
-    expect(await dashboard.getTotalBooks()).toBe(0)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(0)
 
     // 6. Logout
     await page.click('text=Sair')
@@ -94,7 +94,7 @@ test.describe('E2E — User Journeys', () => {
     await expect(page).toHaveURL(/\/dashboard/, { timeout: 12_000 })
 
     await expect(page.locator('body')).not.toContainText(bookTitle)
-    expect(await new DashboardPage(page).getTotalBooks()).toBe(0)
+    await expect.poll(() => new DashboardPage(page).getTotalBooks()).toBe(0)
   })
 
   // ─── Session persistence ──────────────────────────────────────────────────
@@ -125,6 +125,6 @@ test.describe('E2E — User Journeys', () => {
     await login.login(user.email, user.password)
     await expect(page).toHaveURL(/\/dashboard/, { timeout: 12_000 })
     await expect(page.locator('body')).toContainText(bookTitle)
-    expect(await dashboard.getTotalBooks()).toBe(1)
+    await expect.poll(() => dashboard.getTotalBooks()).toBe(1)
   })
 })
