@@ -1,1 +1,1 @@
-{"id":"428b87c4863a7d1ce1d061d29b7aa5df","fullName":"dashboard/dashboard.spec.ts:99:7","name":"shows loading state while fetching books","status":"passed","testResultsByEnv":{"default":"038456a3403c4da024c0209943c6018e"}}
+{"id":"428b87c4863a7d1ce1d061d29b7aa5df","fullName":"dashboard/dashboard.spec.ts:99:7","name":"shows loading state while fetching books","status":"failed","testResultsByEnv":{"default":"d0a08bdc8b6fed3f827f972a5b5d23e4"}}
