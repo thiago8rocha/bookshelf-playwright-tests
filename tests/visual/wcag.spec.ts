@@ -74,7 +74,7 @@ test.describe('Accessibility @a11y', () => {
     await expect(page.getByTestId('login-button')).toBeFocused()
   })
 
-  test('register form: tab order is name → email → password → button', async ({ page }) => {
+  test('register form: tab order is name → email → password → roles → button', async ({ page }) => {
     await page.goto('/register')
     await page.waitForSelector('[data-testid="register-page"]')
 
@@ -84,6 +84,11 @@ test.describe('Accessibility @a11y', () => {
 
     await page.keyboard.press('Tab')
     await expect(page.getByTestId('password-input')).toBeFocused()
+
+    for (const role of ['reader', 'buyer', 'seller']) {
+      await page.keyboard.press('Tab')
+      await expect(page.getByTestId(`register-role-${role}`)).toBeFocused()
+    }
 
     await page.keyboard.press('Tab')
     await expect(page.getByTestId('register-button')).toBeFocused()
