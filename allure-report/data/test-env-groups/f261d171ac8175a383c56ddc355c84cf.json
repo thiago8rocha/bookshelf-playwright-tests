@@ -1,1 +1,1 @@
-{"id":"f261d171ac8175a383c56ddc355c84cf","fullName":"books/books-pagination.spec.ts:22:7","name":"splits the list into pages and navigates between them","status":"failed","testResultsByEnv":{"default":"f5fd9d4feacc725abddcc29bf0a59332"}}
+{"id":"f261d171ac8175a383c56ddc355c84cf","fullName":"books/books-pagination.spec.ts:22:7","name":"splits the list into pages and navigates between them","status":"passed","testResultsByEnv":{"default":"76c9a923922b6790c865798301dd5f9f"}}
