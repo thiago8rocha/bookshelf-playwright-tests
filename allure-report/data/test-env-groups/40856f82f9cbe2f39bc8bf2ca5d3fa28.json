@@ -1,1 +1,1 @@
-{"id":"40856f82f9cbe2f39bc8bf2ca5d3fa28","fullName":"visual/visual.spec.ts:62:7","name":"login page after failed attempt matches snapshot","status":"passed","testResultsByEnv":{"default":"96f6bce24cb37f195295015ddeae2b6a"}}
+{"id":"40856f82f9cbe2f39bc8bf2ca5d3fa28","fullName":"visual/visual.spec.ts:62:7","name":"login page after failed attempt matches snapshot","status":"failed","testResultsByEnv":{"default":"0de43b25d34024c60ad9c3b1d53a748c"}}
