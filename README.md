@@ -39,8 +39,8 @@ Suite completa de testes automatizados construída com **Playwright + TypeScript
 ```
 tests/
 ├── auth/           # Login, register, session, logout (81 testes)
-├── books/          # Create, edit, delete (48 testes)
-├── dashboard/      # Stats, empty state, real-time updates (30 testes)
+├── books/          # Create, edit, delete, status, filtros, paginação, nota e anotações
+├── dashboard/      # Stats, empty state, real-time updates, modo escuro
 ├── e2e/            # Full user journeys (6 testes)
 ├── network/        # Network interception — mock API, loading states, errors (14 testes)
 └── visual/         # Screenshot regression + accessibility axe-core (58 testes)
@@ -143,9 +143,18 @@ O pipeline está configurado em `.github/workflows/playwright.yml` e é acionado
 
 Na aba **Actions** do repositório, selecione **Playwright Tests** → **Run workflow** para disparar a execução sem depender de commit.
 
+Os testes rodam com o navegador em `pt-BR` (`locale` no `playwright.config.ts`), pois a aplicação segue o idioma do navegador.
+
+### Disparo pelos repositórios da aplicação
+
+Os repositórios [bookshelf-api](https://github.com/bookshelf-web/bookshelf-api) e
+[bookshelf-frontend](https://github.com/bookshelf-web/bookshelf-frontend) têm o workflow **Run E2E Tests**
+(*Actions → Run E2E Tests → Run workflow*), que dispara esta suíte (e/ou a outra) sem abrir este repositório.
+Ele usa o secret `E2E_DISPATCH_TOKEN` (PAT com *Actions: read and write* neste repositório).
+
 ### Etapas do pipeline
 
-1. Checkout e build do backend e frontend
+1. Checkout (org `bookshelf-web`) e build do backend e frontend
 2. Execução dos testes não-visuais (auth, books, dashboard, e2e, network)
 3. Geração e commit automático dos snapshots Linux (visual regression)
 4. Execução dos testes visuais com comparação de snapshots
