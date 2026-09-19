@@ -27,6 +27,7 @@ export interface Book {
   description?: string
   rating?: number
   notes?: string
+  coverUrl?: string
 }
 
 /**
