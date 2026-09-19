@@ -1,1 +1,1 @@
-{"id":"0393d442b1b896bb61b7b85e35de3031","fullName":"books/books-create.spec.ts:30:7","name":"creates a book with all fields","status":"failed","testResultsByEnv":{"default":"fef8f601b4e6df23f558436035445beb"}}
+{"id":"0393d442b1b896bb61b7b85e35de3031","fullName":"books/books-create.spec.ts:30:7","name":"creates a book with all fields","status":"passed","testResultsByEnv":{"default":"b8b56b058aaaef5c8d50ada4d6f229ca"}}
