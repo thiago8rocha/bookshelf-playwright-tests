@@ -1,1 +1,1 @@
-{"id":"b80d3ff03480331a89bd1e660ce0ac4a","fullName":"books/books-create.spec.ts:46:7","name":"stats counter increments after creating a book","status":"passed","testResultsByEnv":{"default":"aa4ef96d9759b43ccb59b9d4776a882c"}}
+{"id":"b80d3ff03480331a89bd1e660ce0ac4a","fullName":"books/books-create.spec.ts:46:7","name":"stats counter increments after creating a book","status":"passed","testResultsByEnv":{"default":"f8f5fc50dc56515e488cf8859d1feb08"}}
