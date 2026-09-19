@@ -51,14 +51,14 @@ jobs:
       - name: Checkout Backend
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/bookshelf-api
+          repository: bookshelf-web/bookshelf-api
           path: backend
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout Frontend
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/bookshelf-frontend
+          repository: bookshelf-web/bookshelf-frontend
           path: frontend
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -88,6 +88,9 @@ jobs:
 
       - name: Build and start frontend
         working-directory: frontend
+        env:
+          # The production build targets the hosted API by default (.env.production).
+          VITE_API_URL: http://localhost:3000
         run: |
           npm run build
           npm run preview -- --port 5173 &
