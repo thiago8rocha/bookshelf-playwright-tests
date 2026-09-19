@@ -1,1 +1,1 @@
-{"id":"3ca8e4a248b34cc21469d300de32e384","fullName":"books/books-import-cover.spec.ts:26:7","name":"imports a book from Google Books and saves it with its cover","status":"passed","testResultsByEnv":{"default":"645623f6b117655b112a8fda4b6bec08"}}
+{"id":"3ca8e4a248b34cc21469d300de32e384","fullName":"books/books-import-cover.spec.ts:26:7","name":"imports a book from Google Books and saves it with its cover","status":"passed","testResultsByEnv":{"default":"6a9d26209d5461e71b4fd993fc093c97"}}
