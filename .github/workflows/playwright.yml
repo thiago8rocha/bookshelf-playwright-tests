@@ -43,6 +43,7 @@ jobs:
       DB_NAME: bookshelf
       JWT_SECRET: ci-test-secret
       NODE_ENV: test
+      ADMIN_EMAILS: admin@bookshelf.test
 
     steps:
       - name: Checkout Playwright tests
@@ -103,7 +104,7 @@ jobs:
         run: npx playwright install --with-deps chromium firefox
 
       - name: Run Playwright tests (excluding visual and accessibility)
-        run: npx playwright test tests/auth tests/books tests/dashboard tests/e2e tests/network
+        run: npx playwright test tests/auth tests/accounts tests/books tests/dashboard tests/e2e tests/network
 
       - name: Update Linux visual snapshots
         if: always()
