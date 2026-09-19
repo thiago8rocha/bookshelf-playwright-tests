@@ -1,1 +1,1 @@
-{"id":"49d78d6293532d5727d7f2c96445fdba","fullName":"visual/wcag.spec.ts:55:7","name":"add book modal has no critical a11y violations","status":"failed","testResultsByEnv":{"default":"ceb6f3ac02e36556fc4d3048008c98ce"}}
+{"id":"49d78d6293532d5727d7f2c96445fdba","fullName":"visual/wcag.spec.ts:55:7","name":"add book modal has no critical a11y violations","status":"passed","testResultsByEnv":{"default":"6bb645103902787870c97ed46b2b1c0a"}}
