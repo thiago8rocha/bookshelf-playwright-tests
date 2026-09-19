@@ -25,6 +25,8 @@ export interface Book {
   pages?: number
   language?: string
   description?: string
+  rating?: number
+  notes?: string
 }
 
 /**
