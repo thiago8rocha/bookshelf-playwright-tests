@@ -1,1 +1,1 @@
-{"id":"eecfa110a179f18d08574889eabcba73","fullName":"books/books-delete.spec.ts:71:7","name":"confirmation modal shows book title","status":"failed","testResultsByEnv":{"default":"57016b260d322a996f74d24aa6e67b36"}}
+{"id":"eecfa110a179f18d08574889eabcba73","fullName":"books/books-delete.spec.ts:71:7","name":"confirmation modal shows book title","status":"passed","testResultsByEnv":{"default":"72a03754006ee7a698b4cf2a40c30318"}}

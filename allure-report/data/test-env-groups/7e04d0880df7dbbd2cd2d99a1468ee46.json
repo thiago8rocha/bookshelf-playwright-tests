@@ -1,1 +1,1 @@
-{"id":"7e04d0880df7dbbd2cd2d99a1468ee46","fullName":"e2e/user-journey.spec.ts:102:7","name":"data persists across login sessions","status":"failed","testResultsByEnv":{"default":"69ba5227a5a18c048f40d1ed18274cf7"}}
+{"id":"7e04d0880df7dbbd2cd2d99a1468ee46","fullName":"e2e/user-journey.spec.ts:102:7","name":"data persists across login sessions","status":"passed","testResultsByEnv":{"default":"af339c8bcc3c4f630b93d8c0ec300613"}}
