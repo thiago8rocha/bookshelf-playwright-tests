@@ -35,7 +35,7 @@ test.describe('Books — Create', () => {
     await modal.fillRequired(book.title, book.author)
     // Fill optional text fields (not ISBN — backend has strict validation)
     await page.getByLabel('Editora').fill('Test Publisher')
-    await page.getByLabel('Idioma').fill('Português')
+    await page.locator('#language').fill('Português')
     await page.getByLabel('Descrição').fill('A test description for this book')
     await modal.submit()
     await modal.waitForClose()

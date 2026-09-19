@@ -2,6 +2,10 @@ import { test, expect } from '../../fixtures'
 import { DashboardPage, BookModal } from '../../helpers/pages'
 import { createBook, generateBook } from '../../helpers/api'
 
+
+// The list request carries a query string (page, limit, sort), so match it too.
+const BOOKS_URL = /\/api\/books(\?.*)?$/
+
 test.describe('Network Interception', () => {
   // ─── Request payload validation ───────────────────────────────────────────
 
@@ -9,7 +13,7 @@ test.describe('Network Interception', () => {
     const book = generateBook()
     const requests: any[] = []
 
-    await page.route('**/api/books', (route) => {
+    await page.route(BOOKS_URL, (route) => {
       if (route.request().method() === 'POST') {
         requests.push(JSON.parse(route.request().postData() || '{}'))
         route.continue()
@@ -57,7 +61,7 @@ test.describe('Network Interception', () => {
   test('dashboard shows loading indicator while fetching data', async ({ page, userCredentials }) => {
     let resolveRequest!: () => void
 
-    await page.route('**/api/books', async (route) => {
+    await page.route(BOOKS_URL, async (route) => {
       await new Promise<void>((r) => { resolveRequest = r })
       route.continue()
     })
@@ -83,7 +87,7 @@ test.describe('Network Interception', () => {
   // ─── Slow network ─────────────────────────────────────────────────────────
 
   test('UI stays responsive while API is slow', async ({ authenticatedPage: page, cleanupBooks }) => {
-    await page.route('**/api/books', async (route) => {
+    await page.route(BOOKS_URL, async (route) => {
       if (route.request().method() === 'POST') {
         await new Promise((r) => setTimeout(r, 1500))
         route.continue()
@@ -110,7 +114,7 @@ test.describe('Network Interception', () => {
   // ─── Retry behavior ───────────────────────────────────────────────────────
 
   test('failed book load does not crash the dashboard', async ({ page, userCredentials }) => {
-    await page.route('**/api/books', (route) =>
+    await page.route(BOOKS_URL, (route) =>
       route.fulfill({ status: 503, body: JSON.stringify({ error: 'Service unavailable' }) })
     )
 
