@@ -9,9 +9,13 @@ const PIXEL = Buffer.from(
   'base64',
 )
 
+// The real service answers cross-origin requests with CORS headers; the mock must too,
+// otherwise the browser discards the response.
+const CORS = { 'access-control-allow-origin': '*' }
+
 async function mockCovers(page: Page) {
   await page.route('https://covers.test/**', (route) =>
-    route.fulfill({ body: PIXEL, contentType: 'image/png' }),
+    route.fulfill({ body: PIXEL, contentType: 'image/png', headers: CORS }),
   )
 }
 
@@ -26,6 +30,7 @@ test.describe('Books — Google Books import and covers', () => {
     // Mocked so the suite never depends on the real Google Books service.
     await page.route('**/googleapis.com/books/v1/volumes**', (route) =>
       route.fulfill({
+        headers: CORS,
         json: {
           items: [
             {
@@ -69,7 +74,9 @@ test.describe('Books — Google Books import and covers', () => {
   })
 
   test('shows a message when Google Books finds nothing', async ({ authenticatedPage: page }) => {
-    await page.route('**/googleapis.com/books/v1/volumes**', (route) => route.fulfill({ json: { totalItems: 0 } }))
+    await page.route('**/googleapis.com/books/v1/volumes**', (route) =>
+      route.fulfill({ headers: CORS, json: { totalItems: 0 } }),
+    )
 
     await new DashboardPage(page).addBookButton.click()
     await new BookModal(page).waitForOpen()
