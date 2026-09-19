@@ -1,1 +1,1 @@
-{"id":"9583a7422e53e238d2179fd21a72be60","fullName":"books/books-delete.spec.ts:29:7","name":"stats counter decrements after deleting a book","status":"passed","testResultsByEnv":{"default":"88dfa8274d00f6d8a9fc9e48dcca9a6a"}}
+{"id":"9583a7422e53e238d2179fd21a72be60","fullName":"books/books-delete.spec.ts:29:7","name":"stats counter decrements after deleting a book","status":"passed","testResultsByEnv":{"default":"05a34f0ee0c185b87e4c308806acf2a1"}}
