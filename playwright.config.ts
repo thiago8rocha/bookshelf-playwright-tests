@@ -16,6 +16,8 @@ export default defineConfig({
   ],
   use: {
     baseURL: process.env.BASE_URL || 'http://localhost:5173',
+    // The suites assert pt-BR copy; the app follows the browser language.
+    locale: 'pt-BR',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'on-first-retry',
