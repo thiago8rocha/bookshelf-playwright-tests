@@ -1,1 +1,1 @@
-{"id":"b0c007a4580953dbc7d4b6dfdb56c343","fullName":"auth/login.spec.ts:15:7","name":"logs in with valid credentials @smoke","status":"passed","testResultsByEnv":{"default":"b71d3ee667c26d0d0871929aac8b6151"}}
+{"id":"b0c007a4580953dbc7d4b6dfdb56c343","fullName":"auth/login.spec.ts:15:7","name":"logs in with valid credentials @smoke","status":"passed","testResultsByEnv":{"default":"62bf542b8db1331fb3bf674a3c8628a7"}}
