@@ -1,1 +1,1 @@
-{"id":"38c49de7fa869183f5fa943610231008","fullName":"auth/register.spec.ts:58:7","name":"blocks submit with short password","status":"passed","testResultsByEnv":{"default":"c8685b54596cedbcec189044e519731c"}}
+{"id":"38c49de7fa869183f5fa943610231008","fullName":"auth/register.spec.ts:58:7","name":"blocks submit with short password","status":"passed","testResultsByEnv":{"default":"860fb862f43fc2064d5ee059ff8ed0bf"}}
