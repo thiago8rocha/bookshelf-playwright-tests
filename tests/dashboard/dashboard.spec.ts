@@ -2,6 +2,10 @@ import { test, expect } from '../../fixtures'
 import { DashboardPage, BookModal } from '../../helpers/pages'
 import { createBook, createBooks, createUser, updateBookStatus, generateBook } from '../../helpers/api'
 
+
+// The list request carries a query string (page, limit, sort), so match it too.
+const BOOKS_URL = /\/api\/books(\?.*)?$/
+
 test.describe('Dashboard', () => {
   let dashboard: DashboardPage
 
@@ -99,7 +103,7 @@ test.describe('Dashboard', () => {
   test('shows loading state while fetching books', async ({ page, userCredentials }) => {
     let resolveBooks!: () => void
 
-    await page.route('**/api/books', async (route) => {
+    await page.route(BOOKS_URL, async (route) => {
       await new Promise<void>((resolve) => { resolveBooks = resolve })
       await route.continue()
     })
@@ -122,7 +126,7 @@ test.describe('Dashboard', () => {
   })
 
   test('handles books API error gracefully', async ({ page, userCredentials }) => {
-    await page.route('**/api/books', (route) =>
+    await page.route(BOOKS_URL, (route) =>
       route.fulfill({ status: 500, body: JSON.stringify({ error: 'Server error' }) })
     )
 
