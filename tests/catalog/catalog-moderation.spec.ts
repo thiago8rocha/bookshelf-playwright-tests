@@ -136,12 +136,13 @@ test.describe('Catalog — moderation', () => {
 
   test('the creator can still fix a fresh registration directly', async ({ page, request }) => {
     const ana = await registerWithRoles(request, ['reader'])
-    const created = await shelve(request, ana, { title: 'Titulo com erro', author: 'A' })
+    const typo = `Titulo com erro ${Date.now()}`
+    const created = await shelve(request, ana, { title: typo, author: 'A' })
     const bookId = created.body.book.id as string
 
     await openAs(page, ana, '/dashboard')
     await page.getByTestId(`edit-book-${bookId}`).click()
-    await expect(page.locator('#title')).toHaveValue('Titulo com erro')
+    await expect(page.locator('#title')).toHaveValue(typo)
     await page.locator('#title').fill('Titulo corrigido')
     await expect(page.locator('#title')).toHaveValue('Titulo corrigido')
     await page.getByTestId('save-book-button').click()
