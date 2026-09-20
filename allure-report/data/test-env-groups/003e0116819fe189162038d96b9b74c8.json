@@ -1,1 +1,1 @@
-{"id":"003e0116819fe189162038d96b9b74c8","fullName":"auth/login.spec.ts:65:7","name":"blocks submit with empty email — stays on login","status":"passed","testResultsByEnv":{"default":"a0b769c2299ab6c7c943eed057fd6e8b"}}
+{"id":"003e0116819fe189162038d96b9b74c8","fullName":"auth/login.spec.ts:65:7","name":"blocks submit with empty email — stays on login","status":"passed","testResultsByEnv":{"default":"a2f18363d320f58f8e21042b23e72570"}}

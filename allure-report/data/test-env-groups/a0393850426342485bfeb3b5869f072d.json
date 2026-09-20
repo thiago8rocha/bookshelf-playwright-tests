@@ -1,1 +1,1 @@
-{"id":"a0393850426342485bfeb3b5869f072d","fullName":"catalog/catalog-moderation.spec.ts:154:7","name":"hiding a book blocks new registrations of it","status":"passed","testResultsByEnv":{"default":"11324cefa79340379891a1bcdb366fe4"}}
+{"id":"a0393850426342485bfeb3b5869f072d","fullName":"catalog/catalog-moderation.spec.ts:155:7","name":"hiding a book blocks new registrations of it","status":"passed","testResultsByEnv":{"default":"02911fbe98ece1061ecab60e894563e8"}}
