@@ -67,10 +67,13 @@ test.describe('Catalog — moderation', () => {
   test('an admin confirms a new registration from the review queue', async ({ page, request }) => {
     const ana = await registerWithRoles(request, ['reader'])
     const admin = await adminSession(request)
-    const created = await shelve(request, ana, { title: `Novo ${Date.now()}`, author: 'A', isbn: generateIsbn() })
+    const title = `Novo ${Date.now()}`
+    const created = await shelve(request, ana, { title, author: 'A', isbn: generateIsbn() })
     const catalogId = created.body.book.catalogBookId as string
 
     await openAs(page, admin, '/admin/catalog')
+    // Every test book waits in the queue, so narrow it to this one.
+    await page.getByTestId('catalog-search').fill(title)
     await expect(page.getByTestId(`catalog-book-${catalogId}`)).toBeVisible()
     await page.getByTestId(`catalog-confirm-${catalogId}`).click()
 
@@ -150,10 +153,12 @@ test.describe('Catalog — moderation', () => {
     const bia = await registerWithRoles(request, ['reader'])
     const admin = await adminSession(request)
     const isbn = generateIsbn()
-    const created = await shelve(request, ana, { title: `Ocultar ${Date.now()}`, author: 'A', isbn })
+    const title = `Ocultar ${Date.now()}`
+    const created = await shelve(request, ana, { title, author: 'A', isbn })
     const catalogId = created.body.book.catalogBookId as string
 
     await openAs(page, admin, '/admin/catalog')
+    await page.getByTestId('catalog-search').fill(title)
     await page.getByTestId(`catalog-hide-${catalogId}`).click()
     await expect(page.getByTestId(`catalog-book-${catalogId}`)).toHaveCount(0)
 
