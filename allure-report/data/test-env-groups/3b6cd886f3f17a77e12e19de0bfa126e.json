@@ -1,1 +1,1 @@
-{"id":"3b6cd886f3f17a77e12e19de0bfa126e","fullName":"books/books-delete.spec.ts:16:7","name":"deletes a book and removes it from list","status":"passed","testResultsByEnv":{"default":"2de0a29a5549b61be642f4b17d437bbf"}}
+{"id":"3b6cd886f3f17a77e12e19de0bfa126e","fullName":"books/books-delete.spec.ts:16:7","name":"deletes a book and removes it from list","status":"passed","testResultsByEnv":{"default":"c020688747c393b64e1dcff3fb781986"}}
