@@ -143,15 +143,15 @@ test.describe('Catalog — moderation', () => {
     await openAs(page, ana, '/dashboard')
     await page.getByTestId(`edit-book-${bookId}`).click()
     await expect(page.locator('#title')).toHaveValue(typo)
-    await page.locator('#title').fill('Titulo corrigido')
-    await expect(page.locator('#title')).toHaveValue('Titulo corrigido')
+    await page.locator('#title').fill(`Titulo corrigido ${typo}`)
+    await expect(page.locator('#title')).toHaveValue(`Titulo corrigido ${typo}`)
     const saved = page.waitForResponse((r) => r.url().includes(`/api/books/${bookId}`) && r.request().method() === 'PUT')
     await page.getByTestId('save-book-button').click()
     const response = await saved
     expect(response.status(), await response.text()).toBe(200)
     await expect(page.getByTestId('book-modal')).toBeHidden()
 
-    await expect(page.getByTestId(`book-item-${bookId}`)).toContainText('Titulo corrigido')
+    await expect(page.getByTestId(`book-item-${bookId}`)).toContainText(`Titulo corrigido ${typo}`)
     await expect(page.getByTestId('edit-pending-notice')).toHaveCount(0)
   })
 
