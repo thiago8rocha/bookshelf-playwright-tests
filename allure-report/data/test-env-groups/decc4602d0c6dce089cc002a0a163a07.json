@@ -1,1 +1,1 @@
-{"id":"decc4602d0c6dce089cc002a0a163a07","fullName":"auth/register.spec.ts:15:7","name":"registers and redirects to dashboard @smoke","status":"passed","testResultsByEnv":{"default":"f4221f81643f7866dc806dcf4f91edfd"}}
+{"id":"decc4602d0c6dce089cc002a0a163a07","fullName":"auth/register.spec.ts:15:7","name":"registers and redirects to dashboard @smoke","status":"passed","testResultsByEnv":{"default":"70b34731ad9e1d9f303f24a5db30d6af"}}
