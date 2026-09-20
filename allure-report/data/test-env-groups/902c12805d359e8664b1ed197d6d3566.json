@@ -1,1 +1,1 @@
-{"id":"902c12805d359e8664b1ed197d6d3566","fullName":"accounts/company.spec.ts:65:7","name":"every member of the account only sees their own companies","status":"passed","testResultsByEnv":{"default":"6ff61e40bb0b2235470bb30a8b5a4dd6"}}
+{"id":"902c12805d359e8664b1ed197d6d3566","fullName":"accounts/company.spec.ts:65:7","name":"every member of the account only sees their own companies","status":"passed","testResultsByEnv":{"default":"afbad21ddacfbe7eaf78140eb1bf5cb1"}}
