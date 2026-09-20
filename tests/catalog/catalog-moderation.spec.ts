@@ -145,7 +145,10 @@ test.describe('Catalog — moderation', () => {
     await expect(page.locator('#title')).toHaveValue(typo)
     await page.locator('#title').fill('Titulo corrigido')
     await expect(page.locator('#title')).toHaveValue('Titulo corrigido')
+    const saved = page.waitForResponse((r) => r.url().includes(`/api/books/${bookId}`) && r.request().method() === 'PUT')
     await page.getByTestId('save-book-button').click()
+    const response = await saved
+    expect(response.status(), await response.text()).toBe(200)
     await expect(page.getByTestId('book-modal')).toBeHidden()
 
     await expect(page.getByTestId(`book-item-${bookId}`)).toContainText('Titulo corrigido')
