@@ -1,0 +1,167 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "BookShelf Test User 1789868296048-soz1m" [ref=e6] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e8]
+        - generic [ref=e11]:
+          - heading "BookShelf" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Test User 1789868296048-soz1m
+      - generic [ref=e14]:
+        - navigation "Navegação principal" [ref=e15]:
+          - link "Biblioteca" [ref=e16] [cursor=pointer]:
+            - /url: /dashboard
+          - link "Minha conta" [ref=e17] [cursor=pointer]:
+            - /url: /account
+        - button "Ativar modo escuro" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - group "Idioma" [ref=e21]:
+          - button "PT" [pressed] [ref=e22] [cursor=pointer]
+          - button "EN" [ref=e23] [cursor=pointer]
+        - button "Sair" [ref=e24] [cursor=pointer]
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - heading "Olá, Test User 1789868296048-soz1m!" [level=2] [ref=e27]
+      - paragraph [ref=e28]: Veja como está sua biblioteca hoje
+    - generic [ref=e29]:
+      - generic [ref=e30] [cursor=pointer]:
+        - generic [ref=e31]:
+          - paragraph [ref=e32]: Total de Livros
+          - img [ref=e34]
+        - paragraph [ref=e37]: "1"
+        - paragraph [ref=e38]: livros na biblioteca
+      - generic [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]:
+          - paragraph [ref=e41]: Para Ler
+          - img [ref=e43]
+        - paragraph [ref=e46]: "1"
+        - paragraph [ref=e47]: Na fila de leitura
+      - generic [ref=e48] [cursor=pointer]:
+        - generic [ref=e49]:
+          - paragraph [ref=e50]: Lendo
+          - img [ref=e52]
+        - paragraph [ref=e56]: "0"
+        - paragraph [ref=e57]: Em progresso
+      - generic [ref=e58] [cursor=pointer]:
+        - generic [ref=e59]:
+          - paragraph [ref=e60]: Concluídos
+          - img [ref=e62]
+        - paragraph [ref=e65]: "0"
+        - paragraph [ref=e66]: Livros finalizados
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - heading "Adicione mais livros" [level=3] [ref=e70]
+        - paragraph [ref=e71]: Continue expandindo sua coleção de livros
+        - button "Adicionar Livro" [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+          - text: Adicionar Livro
+      - img [ref=e78]
+    - generic [ref=e81]:
+      - heading "Meus Livros" [level=3] [ref=e82]
+      - search "Filtros" [ref=e83]:
+        - generic [ref=e84]:
+          - img
+          - searchbox "Buscar por título ou autor" [ref=e85]
+        - combobox "Filtrar por status" [ref=e86]:
+          - option "Todos os status" [selected]
+          - option "Para ler"
+          - option "Lendo"
+          - option "Lido"
+        - combobox "Filtrar por nota" [ref=e87]:
+          - option "Todas as notas" [selected]
+          - option "5 ★"
+          - option "4 ★"
+          - option "3 ★"
+          - option "2 ★"
+          - option "1 ★"
+        - combobox "Ordenar por" [ref=e88]:
+          - option "Mais recentes" [selected]
+          - option "Mais antigos"
+          - option "Título (A-Z)"
+          - option "Autor (A-Z)"
+          - option "Melhor avaliados"
+      - paragraph [ref=e89]: 1 livro encontrado
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - generic [ref=e94]:
+            - heading "Titulo com erro 1789868296281" [level=4] [ref=e95]
+            - paragraph [ref=e96]: A
+          - generic [ref=e97]:
+            - button "Editar livro" [ref=e98] [cursor=pointer]:
+              - img [ref=e99]
+            - button "Excluir livro" [ref=e102] [cursor=pointer]:
+              - img [ref=e103]
+        - combobox "Status de leitura de Titulo com erro 1789868296281" [ref=e109]:
+          - option "Para ler" [selected]
+          - option "Lendo"
+          - option "Lido"
+  - generic [ref=e111]:
+    - button "Fechar" [ref=e112] [cursor=pointer]:
+      - img [ref=e113]
+    - generic [ref=e116]:
+      - img [ref=e118]
+      - heading "Editar Livro" [level=2] [ref=e121]
+      - paragraph [ref=e122]: Preencha os dados do livro
+    - alert [ref=e123]: Já existe outro livro no catálogo com esta identidade (ISBN ou dados).
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]: Título *
+          - textbox "Título *" [ref=e128]:
+            - /placeholder: "Ex: 1984"
+            - text: Titulo corrigido
+        - generic [ref=e129]:
+          - generic [ref=e130]: Autor *
+          - textbox "Autor *" [ref=e131]:
+            - /placeholder: "Ex: George Orwell"
+            - text: A
+        - generic [ref=e132]:
+          - generic [ref=e133]: ISBN
+          - textbox "ISBN" [ref=e134]:
+            - /placeholder: "Ex: 978-0451524935"
+        - generic [ref=e135]:
+          - generic [ref=e136]: Editora
+          - textbox "Editora" [ref=e137]:
+            - /placeholder: "Ex: Companhia das Letras"
+        - generic [ref=e138]:
+          - generic [ref=e139]: Edição
+          - textbox "Edição" [ref=e140]:
+            - /placeholder: "Ex: 2ª edição"
+        - generic [ref=e141]:
+          - generic [ref=e142]: Ano de Publicação
+          - spinbutton "Ano de Publicação" [ref=e143]
+        - generic [ref=e144]:
+          - generic [ref=e145]: Número de Páginas
+          - spinbutton "Número de Páginas" [ref=e146]
+        - generic [ref=e147]:
+          - generic [ref=e148]: Idioma
+          - textbox "Idioma" [ref=e149]:
+            - /placeholder: "Ex: Português"
+        - generic [ref=e150]:
+          - generic [ref=e151]: Nota
+          - combobox "Nota" [ref=e152]:
+            - option "Sem nota" [selected]
+            - option "1 ★"
+            - option "2 ★"
+            - option "3 ★"
+            - option "4 ★"
+            - option "5 ★"
+      - generic [ref=e153]:
+        - generic [ref=e154]: URL da capa
+        - textbox "URL da capa" [ref=e156]:
+          - /placeholder: https://...
+      - generic [ref=e157]:
+        - generic [ref=e158]: Descrição
+        - textbox "Descrição" [ref=e159]:
+          - /placeholder: Breve descrição do livro...
+      - generic [ref=e160]:
+        - generic [ref=e161]: Anotações pessoais
+        - textbox "Anotações pessoais" [ref=e162]:
+          - /placeholder: Suas impressões, trechos favoritos...
+      - generic [ref=e163]:
+        - button "Cancelar" [ref=e164] [cursor=pointer]
+        - button "Atualizar" [ref=e165] [cursor=pointer]
+```

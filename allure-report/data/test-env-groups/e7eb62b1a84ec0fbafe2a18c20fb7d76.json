@@ -1,1 +1,1 @@
-{"id":"e7eb62b1a84ec0fbafe2a18c20fb7d76","fullName":"catalog/catalog-moderation.spec.ts:137:7","name":"the creator can still fix a fresh registration directly","status":"failed","testResultsByEnv":{"default":"8910f0622ec35f2b699e5581a855e03e"}}
+{"id":"e7eb62b1a84ec0fbafe2a18c20fb7d76","fullName":"catalog/catalog-moderation.spec.ts:137:7","name":"the creator can still fix a fresh registration directly","status":"failed","testResultsByEnv":{"default":"45bf25c7ae35a85a6229f86c1c4ae76c"}}
