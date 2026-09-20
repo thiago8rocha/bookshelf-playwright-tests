@@ -1,1 +1,1 @@
-{"id":"cf1d11157f32a7df621ca12848814349","fullName":"catalog/catalog-moderation.spec.ts:173:7","name":"only admins can open the catalog moderation page","status":"passed","testResultsByEnv":{"default":"2333ace2184adfa0b52982fc8f113c1d"}}
+{"id":"cf1d11157f32a7df621ca12848814349","fullName":"catalog/catalog-moderation.spec.ts:174:7","name":"only admins can open the catalog moderation page","status":"passed","testResultsByEnv":{"default":"253b358c3db3f3e6f3d214801170ed4d"}}
