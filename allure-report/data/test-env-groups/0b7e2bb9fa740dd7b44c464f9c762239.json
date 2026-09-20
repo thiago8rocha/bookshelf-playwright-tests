@@ -1,1 +1,1 @@
-{"id":"0b7e2bb9fa740dd7b44c464f9c762239","fullName":"auth/register.spec.ts:34:7","name":"redirects to dashboard if already authenticated","status":"passed","testResultsByEnv":{"default":"a2bb11a699e85e8f8c32650a06cf7496"}}
+{"id":"0b7e2bb9fa740dd7b44c464f9c762239","fullName":"auth/register.spec.ts:34:7","name":"redirects to dashboard if already authenticated","status":"failed","testResultsByEnv":{"default":"ae4d03f10c7139c2be6485c3776f5392"}}
