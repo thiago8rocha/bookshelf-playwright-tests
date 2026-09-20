@@ -1,1 +1,1 @@
-{"id":"698f9f33d09bb92ce09fc54496fcfa69","fullName":"auth/register.spec.ts:49:7","name":"shows error on duplicate email","status":"passed","testResultsByEnv":{"default":"da2cf15a74d22486e0cd79f60c91d86d"}}
+{"id":"698f9f33d09bb92ce09fc54496fcfa69","fullName":"auth/register.spec.ts:49:7","name":"shows error on duplicate email","status":"passed","testResultsByEnv":{"default":"f37699945ef974a7f8112a15678e9eee"}}
