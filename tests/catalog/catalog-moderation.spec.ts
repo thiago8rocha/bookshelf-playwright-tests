@@ -141,8 +141,11 @@ test.describe('Catalog — moderation', () => {
 
     await openAs(page, ana, '/dashboard')
     await page.getByTestId(`edit-book-${bookId}`).click()
+    await expect(page.locator('#title')).toHaveValue('Titulo com erro')
     await page.locator('#title').fill('Titulo corrigido')
+    await expect(page.locator('#title')).toHaveValue('Titulo corrigido')
     await page.getByTestId('save-book-button').click()
+    await expect(page.getByTestId('book-modal')).toBeHidden()
 
     await expect(page.getByTestId(`book-item-${bookId}`)).toContainText('Titulo corrigido')
     await expect(page.getByTestId('edit-pending-notice')).toHaveCount(0)
