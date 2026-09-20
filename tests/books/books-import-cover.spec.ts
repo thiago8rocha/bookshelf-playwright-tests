@@ -3,6 +3,13 @@ import { DashboardPage, BookModal } from '../../helpers/pages'
 import { createBook } from '../../helpers/api'
 import type { Page } from '@playwright/test'
 
+/** A random ISBN-13 with a valid check digit (the API validates it). */
+function generateIsbn(): string {
+  const twelve = `978${String(Math.floor(Math.random() * 1_000_000_000)).padStart(9, '0')}`
+  const sum = twelve.split('').reduce((total, digit, index) => total + Number(digit) * (index % 2 === 0 ? 1 : 3), 0)
+  return `${twelve}${(10 - (sum % 10)) % 10}`
+}
+
 // 1x1 transparent PNG, served for every fake cover URL.
 const PIXEL = Buffer.from(
   'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==',
@@ -45,7 +52,7 @@ test.describe('Books — Google Books import and covers', () => {
                 publishedDate: '2020-05-01',
                 pageCount: 321,
                 language: 'pt',
-                industryIdentifiers: [{ type: 'ISBN_13', identifier: `978${tag}`.slice(0, 13) }],
+                industryIdentifiers: [{ type: 'ISBN_13', identifier: generateIsbn() }],
                 imageLinks: { thumbnail: 'http://covers.test/cover.png' },
               },
             },
