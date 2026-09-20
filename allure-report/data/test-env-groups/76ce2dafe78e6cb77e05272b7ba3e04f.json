@@ -1,1 +1,1 @@
-{"id":"76ce2dafe78e6cb77e05272b7ba3e04f","fullName":"accounts/company.spec.ts:41:7","name":"an invalid CNPJ is rejected with a message and the form stays open","status":"passed","testResultsByEnv":{"default":"804fad011710925ed537711fcbb361f4"}}
+{"id":"76ce2dafe78e6cb77e05272b7ba3e04f","fullName":"accounts/company.spec.ts:41:7","name":"an invalid CNPJ is rejected with a message and the form stays open","status":"passed","testResultsByEnv":{"default":"1476fbb944c709009a20aed2a47526e0"}}
