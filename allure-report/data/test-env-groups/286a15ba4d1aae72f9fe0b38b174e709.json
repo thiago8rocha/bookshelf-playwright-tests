@@ -1,1 +1,1 @@
-{"id":"286a15ba4d1aae72f9fe0b38b174e709","fullName":"accounts/roles.spec.ts:70:7","name":"only admins can open the company verification page","status":"passed","testResultsByEnv":{"default":"6961736e65e91f896180c629fe08e922"}}
+{"id":"286a15ba4d1aae72f9fe0b38b174e709","fullName":"accounts/roles.spec.ts:70:7","name":"only admins can open the company verification page","status":"passed","testResultsByEnv":{"default":"57f80181c88d20559724a59eb361c2d9"}}
