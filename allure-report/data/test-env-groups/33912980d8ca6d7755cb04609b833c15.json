@@ -1,1 +1,1 @@
-{"id":"33912980d8ca6d7755cb04609b833c15","fullName":"accounts/company.spec.ts:78:7","name":"an admin verifies a company and its owner sees it verified","status":"passed","testResultsByEnv":{"default":"2ef2b9df8a9b6f9a4c8d8c542127db03"}}
+{"id":"33912980d8ca6d7755cb04609b833c15","fullName":"accounts/company.spec.ts:78:7","name":"an admin verifies a company and its owner sees it verified","status":"failed","testResultsByEnv":{"default":"78373e0ab02a516e6b59f74f68d5c9a0"}}
