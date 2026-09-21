@@ -1,1 +1,1 @@
-{"id":"a5ff8aff76c0fb404b8b999044a4305b","fullName":"auth/login.spec.ts:81:7","name":"blocks submit with invalid email format","status":"passed","testResultsByEnv":{"default":"b64bda1cfe1623f510cccc3629f8513a"}}
+{"id":"a5ff8aff76c0fb404b8b999044a4305b","fullName":"auth/login.spec.ts:81:7","name":"blocks submit with invalid email format","status":"passed","testResultsByEnv":{"default":"a34971ad96f8daabdca1c2f06822c5ae"}}
