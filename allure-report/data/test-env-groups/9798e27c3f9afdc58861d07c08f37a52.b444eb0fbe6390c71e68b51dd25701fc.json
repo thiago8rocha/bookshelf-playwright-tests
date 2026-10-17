@@ -1,0 +1,1 @@
+{"id":"9798e27c3f9afdc58861d07c08f37a52.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/login.spec.ts:137:7","name":"disables login button while request is in flight","status":"passed","testResultsByEnv":{"default":"697ee521363de85f2bd981bd6e41e7fc"}}

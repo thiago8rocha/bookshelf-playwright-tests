@@ -1,0 +1,1 @@
+{"id":"6a9f0c8433d3970d7921717769884c12.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:114:7","name":"a declined card leaves the order awaiting payment and can be retried","status":"passed","testResultsByEnv":{"default":"de4aeaa9348296a20433377a90510552"}}

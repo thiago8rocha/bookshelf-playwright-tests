@@ -1,0 +1,1 @@
+{"id":"53432064bd43698eca24475ba3993a52.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/admin-users.spec.ts:43:7","name":"a suspended user cannot sign in until an admin reactivates the account","status":"passed","testResultsByEnv":{"default":"e6ef3d048552af400d90f7714f9a231e"}}
