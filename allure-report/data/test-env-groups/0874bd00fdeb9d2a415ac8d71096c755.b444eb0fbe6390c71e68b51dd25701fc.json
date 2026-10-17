@@ -1,0 +1,1 @@
+{"id":"0874bd00fdeb9d2a415ac8d71096c755.b444eb0fbe6390c71e68b51dd25701fc","fullName":"network/network.spec.ts:39:7","name":"Authorization header is sent on all authenticated requests","status":"passed","testResultsByEnv":{"default":"1e18b22e18470c3a1c9137c0c06f2071"}}

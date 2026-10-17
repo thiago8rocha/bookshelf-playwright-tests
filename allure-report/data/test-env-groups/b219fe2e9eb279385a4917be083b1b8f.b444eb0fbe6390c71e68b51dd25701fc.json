@@ -1,0 +1,1 @@
+{"id":"b219fe2e9eb279385a4917be083b1b8f.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/roles.spec.ts:78:7","name":"the library API answers 403 to an account without the reader role","status":"passed","testResultsByEnv":{"default":"afd227515c984060445cceef3a84daba"}}

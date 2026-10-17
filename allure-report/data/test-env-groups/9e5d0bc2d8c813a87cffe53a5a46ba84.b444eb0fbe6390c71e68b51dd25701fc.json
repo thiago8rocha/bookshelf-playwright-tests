@@ -1,0 +1,1 @@
+{"id":"9e5d0bc2d8c813a87cffe53a5a46ba84.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/session.spec.ts:39:7","name":"back button after logout does not restore session","status":"passed","testResultsByEnv":{"default":"320d87b7ce0eacb95e88f59eda9169cf"}}

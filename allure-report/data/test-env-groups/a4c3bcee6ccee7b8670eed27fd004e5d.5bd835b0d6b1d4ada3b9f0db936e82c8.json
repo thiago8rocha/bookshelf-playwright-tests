@@ -1,0 +1,1 @@
+{"id":"a4c3bcee6ccee7b8670eed27fd004e5d.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-pagination.spec.ts:46:7","name":"steps back a page when the last book of the last page is deleted","status":"passed","testResultsByEnv":{"default":"113d011c12fc54b484e46cdd44c3a9dd"}}

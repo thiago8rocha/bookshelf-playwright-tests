@@ -1,0 +1,1 @@
+{"id":"3bdfd88e4c4f486e284d1af0a7e1081e.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-import-cover.spec.ts:112:7","name":"falls back to a placeholder when the cover cannot be loaded","status":"passed","testResultsByEnv":{"default":"e7c803078809e1e3811b311e1741a91c"}}

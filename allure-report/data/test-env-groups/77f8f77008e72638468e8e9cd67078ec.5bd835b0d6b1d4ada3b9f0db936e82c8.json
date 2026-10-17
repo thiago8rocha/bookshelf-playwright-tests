@@ -1,0 +1,1 @@
+{"id":"77f8f77008e72638468e8e9cd67078ec.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"store/store.spec.ts:73:7","name":"ship to an address, pay with a Pix that cannot be paid at a bank, then track and confirm receipt","status":"passed","testResultsByEnv":{"default":"ff5f89c48e5d71a34721a662394c8003"}}

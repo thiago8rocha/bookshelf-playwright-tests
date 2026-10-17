@@ -1,0 +1,1 @@
+{"id":"887000a1ec56e35d624e8021b9c0fd16.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"catalog/catalog-moderation.spec.ts:29:7","name":"two readers adding the same ISBN share one catalog book and see its data","status":"passed","testResultsByEnv":{"default":"6c01cf575753fa798792679e9a6fb039"}}
