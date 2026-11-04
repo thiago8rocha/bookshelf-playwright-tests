@@ -1,0 +1,62 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - heading "Tsundoku Visual User" [level=1] [ref=e6]:
+        - link "Tsundoku Visual User" [ref=e7] [cursor=pointer]:
+          - /url: /dashboard
+          - img "Tsundoku" [ref=e8]
+          - generic [ref=e9]: Visual User
+      - generic [ref=e10]:
+        - combobox "Tema" [ref=e12] [cursor=pointer]:
+          - option "Sistema" [selected]
+          - option "Claro"
+          - option "Escuro"
+        - group "Idioma" [ref=e13]:
+          - button "PT" [pressed] [ref=e14] [cursor=pointer]
+          - button "EN" [ref=e15] [cursor=pointer]
+        - button "Sair" [ref=e16] [cursor=pointer]
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - heading "Olá, Visual User!" [level=2] [ref=e19]
+      - paragraph [ref=e20]: Veja como está sua biblioteca hoje
+    - generic [ref=e21]:
+      - generic [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]:
+          - paragraph [ref=e24]: Total de Livros
+          - img [ref=e26]
+        - paragraph [ref=e29]: "0"
+        - paragraph [ref=e30]: livros na biblioteca
+      - generic [ref=e31] [cursor=pointer]:
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: Para Ler
+          - img [ref=e35]
+        - paragraph [ref=e38]: "0"
+        - paragraph [ref=e39]: Na fila de leitura
+      - generic [ref=e40] [cursor=pointer]:
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Lendo
+          - img [ref=e44]
+        - paragraph [ref=e48]: "0"
+        - paragraph [ref=e49]: Em progresso
+      - generic [ref=e50] [cursor=pointer]:
+        - generic [ref=e51]:
+          - paragraph [ref=e52]: Concluídos
+          - img [ref=e54]
+        - paragraph [ref=e57]: "0"
+        - paragraph [ref=e58]: Livros finalizados
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - heading "Comece sua biblioteca" [level=3] [ref=e62]
+        - paragraph [ref=e63]: Adicione seu primeiro livro e comece a organizar suas leituras
+        - button "Adicionar Primeiro Livro" [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+          - text: Adicionar Primeiro Livro
+      - img [ref=e70]
+    - generic [ref=e74]:
+      - img [ref=e76]
+      - heading "Nenhum livro ainda" [level=3] [ref=e79]
+      - paragraph [ref=e80]: Sua biblioteca está vazia. Que tal adicionar seu primeiro livro?
+```

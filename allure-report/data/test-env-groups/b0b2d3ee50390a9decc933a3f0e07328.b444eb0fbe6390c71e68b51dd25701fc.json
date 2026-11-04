@@ -1,1 +1,1 @@
-{"id":"b0b2d3ee50390a9decc933a3f0e07328.b444eb0fbe6390c71e68b51dd25701fc","fullName":"visual/wcag.spec.ts:97:7","name":"all interactive elements have visible focus indicators","status":"failed","testResultsByEnv":{"default":"ec9f12a71ced2a90fca94f23e2874ad5"}}
+{"id":"b0b2d3ee50390a9decc933a3f0e07328.b444eb0fbe6390c71e68b51dd25701fc","fullName":"visual/wcag.spec.ts:97:7","name":"all interactive elements have visible focus indicators","status":"passed","testResultsByEnv":{"default":"49a21d934db40aee3d3ef567a3e1970a"}}

@@ -1,0 +1,1 @@
+{"id":"003e0116819fe189162038d96b9b74c8.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/login.spec.ts:65:7","name":"blocks submit with empty email — stays on login","status":"passed","testResultsByEnv":{"default":"1546749bba277a879e3c39607b8936b4"}}

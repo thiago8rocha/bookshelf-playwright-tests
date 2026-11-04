@@ -1,1 +1,1 @@
-{"id":"c7f2bf5ad998ebd9b24cf6c1f56ba417.8e098aee18e8dfe419681df8d62d9842","fullName":"visual/wcag.spec.ts:77:7","name":"register form: tab order is name → email → password → roles → button","status":"failed","testResultsByEnv":{"default":"3fb453bb5b014784640337a45ef6cfce"}}
+{"id":"c7f2bf5ad998ebd9b24cf6c1f56ba417.8e098aee18e8dfe419681df8d62d9842","fullName":"visual/wcag.spec.ts:77:7","name":"register form: tab order is name → email → password → roles → button","status":"passed","testResultsByEnv":{"default":"eabd2661b0b4a8c6b70777bc348140e3"}}
