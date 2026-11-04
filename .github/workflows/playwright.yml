@@ -5,6 +5,10 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  schedule:
+    # The suite runs against the latest main of both app repos, so it must run
+    # even when this repo has no pushes. 09:00 Brasília, Monday to Friday.
+    - cron: '0 12 * * 1-5'
   workflow_dispatch:
 
 permissions:
