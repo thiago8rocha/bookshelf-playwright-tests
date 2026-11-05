@@ -1,1 +1,1 @@
-{"id":"c7c380757ff9f4926f64c29babda68a5.b444eb0fbe6390c71e68b51dd25701fc","fullName":"visual/visual.spec.ts:55:7","name":"register page matches snapshot","status":"passed","testResultsByEnv":{"default":"00446bf05d19a2a6bbc75edc90d7e50b"}}
+{"id":"c7c380757ff9f4926f64c29babda68a5.b444eb0fbe6390c71e68b51dd25701fc","fullName":"visual/visual.spec.ts:55:7","name":"register page matches snapshot","status":"failed","testResultsByEnv":{"default":"0229eb90b7bdd0dafa110a8f92f85788"}}
