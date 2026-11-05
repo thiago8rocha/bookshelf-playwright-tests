@@ -82,8 +82,8 @@ Do not commit or push unless asked. Do not add AI-attribution trailers to commit
 - Visual snapshots are per platform. `*-win32.png` come from local runs; `*-linux.png` are written by CI and committed as
   `ci: update Linux visual snapshots [skip ci]`. Do not overwrite Linux files from Windows.
   They live in `tests/visual/visual.spec.ts-snapshots/` (the README path is outdated).
-- The CI accessibility step runs `tests/accessibility`, which does not exist; the accessibility specs are in
-  `tests/visual/wcag.spec.ts`. `npm run test:ui` greps `@ui`, a tag no test uses.
+- The accessibility specs are in `tests/visual/wcag.spec.ts` (tag `@a11y`); CI runs them in their own step and the visual steps skip them. `npm run test:ui` greps `@ui`, a tag no test uses.
+- Path arguments are regexes matched against the absolute path, and the CI checkout is `.../bookshelf-playwright-tests/bookshelf-playwright-tests`, so `tests/books` matches every file. Write directory filters with a trailing slash (`tests/books/`).
 - Locally `retries` is 0 and traces are `on-first-retry`, so pass `--trace on` to get one.
 
 ## Definition of done

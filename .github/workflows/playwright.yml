@@ -108,11 +108,11 @@ jobs:
         run: npx playwright install --with-deps chromium firefox
 
       - name: Run Playwright tests (excluding visual and accessibility)
-        run: npx playwright test tests/auth tests/accounts tests/catalog tests/store tests/books tests/dashboard tests/e2e tests/network
+        run: npx playwright test tests/auth/ tests/accounts/ tests/catalog/ tests/store/ tests/books/ tests/dashboard/ tests/e2e/ tests/network/
 
       - name: Update Linux visual snapshots
         if: always()
-        run: npx playwright test tests/visual --update-snapshots all
+        run: npx playwright test tests/visual/ --grep-invert @a11y --update-snapshots all
         continue-on-error: true
 
       - name: Commit updated Linux snapshots
@@ -127,12 +127,12 @@ jobs:
 
       - name: Run visual regression tests
         if: always()
-        run: npx playwright test tests/visual
+        run: npx playwright test tests/visual/ --grep-invert @a11y
         continue-on-error: true
 
       - name: Run accessibility tests
         if: always()
-        run: npx playwright test tests/accessibility
+        run: npx playwright test tests/visual/wcag.spec.ts
         continue-on-error: true
 
       # ── Restaurar histórico do Allure do gh-pages ─────────────────────────
