@@ -1,1 +1,1 @@
-{"id":"cf478ae250e112be7f756ec57a3c0fb1.b444eb0fbe6390c71e68b51dd25701fc","fullName":"visual/visual.spec.ts:83:7","name":"login page on mobile viewport matches snapshot","status":"failed","testResultsByEnv":{"default":"e46008cf5f20e1e31be62d03b3a93013"}}
+{"id":"cf478ae250e112be7f756ec57a3c0fb1.b444eb0fbe6390c71e68b51dd25701fc","fullName":"visual/visual.spec.ts:83:7","name":"login page on mobile viewport matches snapshot","status":"passed","testResultsByEnv":{"default":"3b137f2c381549f8e9ff545f7013f621"}}

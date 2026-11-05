@@ -1,1 +1,1 @@
-{"id":"0fe2e9a71f4e4cc7600b444c518f0c6d.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"visual/visual.spec.ts:48:7","name":"login page matches snapshot","status":"failed","testResultsByEnv":{"default":"da4ae9480dab76e5364428c0815bbc06"}}
+{"id":"0fe2e9a71f4e4cc7600b444c518f0c6d.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"visual/visual.spec.ts:48:7","name":"login page matches snapshot","status":"passed","testResultsByEnv":{"default":"d05aaeb6693beb6cae6db0ca4ae436ca"}}

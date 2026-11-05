@@ -1,1 +1,1 @@
-{"id":"6d41debe730fb756009460e774483bac.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"auth/register.spec.ts:23:7","name":"stores token in localStorage after register","status":"passed","testResultsByEnv":{"default":"04fd2955a09968fa10b041212582ac6a"}}
+{"id":"6d41debe730fb756009460e774483bac.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"auth/register.spec.ts:23:7","name":"stores token in localStorage after register","status":"passed","testResultsByEnv":{"default":"3f491f7705e1ed880163df0802b0a875"}}

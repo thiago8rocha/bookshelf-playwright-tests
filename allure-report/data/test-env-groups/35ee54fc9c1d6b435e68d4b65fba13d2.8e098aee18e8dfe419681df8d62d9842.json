@@ -1,1 +1,1 @@
-{"id":"35ee54fc9c1d6b435e68d4b65fba13d2.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/session.spec.ts:22:7","name":"logout clears session and redirects to login","status":"passed","testResultsByEnv":{"default":"3f245e9998e5d44bb57deec496084f98"}}
+{"id":"35ee54fc9c1d6b435e68d4b65fba13d2.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/session.spec.ts:22:7","name":"logout clears session and redirects to login","status":"passed","testResultsByEnv":{"default":"e3f51840830e9344a505c37aebf2aec9"}}
