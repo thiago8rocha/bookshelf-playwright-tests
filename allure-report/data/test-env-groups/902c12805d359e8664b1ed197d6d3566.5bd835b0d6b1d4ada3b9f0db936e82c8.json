@@ -1,1 +1,1 @@
-{"id":"902c12805d359e8664b1ed197d6d3566.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/company.spec.ts:65:7","name":"every member of the account only sees their own companies","status":"passed","testResultsByEnv":{"default":"89bba4c8f3a14083de86b4be3a70a156"}}
+{"id":"902c12805d359e8664b1ed197d6d3566.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/company.spec.ts:65:7","name":"every member of the account only sees their own companies","status":"passed","testResultsByEnv":{"default":"96004a5d9f404e24cb4548b535058116"}}
