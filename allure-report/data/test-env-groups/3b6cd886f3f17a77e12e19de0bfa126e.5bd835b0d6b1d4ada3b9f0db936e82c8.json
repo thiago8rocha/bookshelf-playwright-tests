@@ -1,1 +1,1 @@
-{"id":"3b6cd886f3f17a77e12e19de0bfa126e.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-delete.spec.ts:16:7","name":"deletes a book and removes it from list","status":"passed","testResultsByEnv":{"default":"73956a2b88c7a4265ca784a377560500"}}
+{"id":"3b6cd886f3f17a77e12e19de0bfa126e.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-delete.spec.ts:16:7","name":"deletes a book and removes it from list","status":"passed","testResultsByEnv":{"default":"8c71cffc28159952827262a1766441e3"}}
