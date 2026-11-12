@@ -1,1 +1,1 @@
-{"id":"e7eb62b1a84ec0fbafe2a18c20fb7d76.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"catalog/catalog-moderation.spec.ts:137:7","name":"the creator can still fix a fresh registration directly","status":"passed","testResultsByEnv":{"default":"a85d779b651d4ac2bd0b468d8c19f23b"}}
+{"id":"e7eb62b1a84ec0fbafe2a18c20fb7d76.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"catalog/catalog-moderation.spec.ts:137:7","name":"the creator can still fix a fresh registration directly","status":"failed","testResultsByEnv":{"default":"f9f65b6ac624dd3427c5dc8fdc716842"}}

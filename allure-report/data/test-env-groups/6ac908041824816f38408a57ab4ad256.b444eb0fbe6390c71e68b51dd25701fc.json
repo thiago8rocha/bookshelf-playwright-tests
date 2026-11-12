@@ -1,1 +1,1 @@
-{"id":"6ac908041824816f38408a57ab4ad256.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-import-cover.spec.ts:126:7","name":"the book form can be filled manually with a cover URL and previews it","status":"passed","testResultsByEnv":{"default":"51cf836e4e1a41af78eb17cebe134430"}}
+{"id":"6ac908041824816f38408a57ab4ad256.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-import-cover.spec.ts:126:7","name":"the book form can be filled manually with a cover URL and previews it","status":"failed","testResultsByEnv":{"default":"5517988672487b79b0675bb87e3f2d4e"}}

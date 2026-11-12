@@ -1,1 +1,1 @@
-{"id":"b59025fe49e2d2d6224e269faf82b6e4.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/company.spec.ts:25:7","name":"a seller registers a company and sees it awaiting verification","status":"passed","testResultsByEnv":{"default":"9d297a79be98fb885545da7d7ad7de5d"}}
+{"id":"b59025fe49e2d2d6224e269faf82b6e4.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/company.spec.ts:25:7","name":"a seller registers a company and sees it awaiting verification","status":"failed","testResultsByEnv":{"default":"c6ea61da16c5bbbe80aa1ceaba23db18"}}

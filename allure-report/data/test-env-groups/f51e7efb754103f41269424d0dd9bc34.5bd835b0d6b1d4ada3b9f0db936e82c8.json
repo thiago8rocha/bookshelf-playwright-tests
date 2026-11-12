@@ -1,1 +1,1 @@
-{"id":"f51e7efb754103f41269424d0dd9bc34.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"store/store.spec.ts:205:7","name":"a seller lists a catalog book from the sell page","status":"passed","testResultsByEnv":{"default":"a9edfd715e7b9e3a6e9da886acafd0a2"}}
+{"id":"f51e7efb754103f41269424d0dd9bc34.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"store/store.spec.ts:205:7","name":"a seller lists a catalog book from the sell page","status":"failed","testResultsByEnv":{"default":"e6bb31f29dc42efadaa877e7035f7a20"}}

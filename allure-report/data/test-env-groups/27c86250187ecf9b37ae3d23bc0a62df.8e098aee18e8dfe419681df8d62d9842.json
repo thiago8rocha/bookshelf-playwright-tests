@@ -1,1 +1,1 @@
-{"id":"27c86250187ecf9b37ae3d23bc0a62df.8e098aee18e8dfe419681df8d62d9842","fullName":"visual/visual.spec.ts:99:9","name":"empty dashboard matches snapshot","status":"passed","testResultsByEnv":{"default":"b0120eb8bb07b3a95ad5c73ee5116823"}}
+{"id":"27c86250187ecf9b37ae3d23bc0a62df.8e098aee18e8dfe419681df8d62d9842","fullName":"visual/visual.spec.ts:99:9","name":"empty dashboard matches snapshot","status":"failed","testResultsByEnv":{"default":"17c167226dd8160a9fe6e43304cc7e0e"}}

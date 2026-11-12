@@ -1,1 +1,1 @@
-{"id":"a90e68c7e981493edc7259724668bfc1.8e098aee18e8dfe419681df8d62d9842","fullName":"visual/wcag.spec.ts:40:7","name":"dashboard with books has no critical a11y violations","status":"passed","testResultsByEnv":{"default":"b308d1de5fb7ca9f1b578e370874f47b"}}
+{"id":"a90e68c7e981493edc7259724668bfc1.8e098aee18e8dfe419681df8d62d9842","fullName":"visual/wcag.spec.ts:40:7","name":"dashboard with books has no critical a11y violations","status":"failed","testResultsByEnv":{"default":"b5d6f6c5f7360d216b3d48aebdc53c1e"}}

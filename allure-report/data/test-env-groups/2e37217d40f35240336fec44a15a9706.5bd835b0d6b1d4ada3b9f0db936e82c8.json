@@ -1,1 +1,1 @@
-{"id":"2e37217d40f35240336fec44a15a9706.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-delete.spec.ts:87:7","name":"shows loading state on confirm button while deleting","status":"passed","testResultsByEnv":{"default":"7b39756fcba6fd6f2a4af4f7fffd34ae"}}
+{"id":"2e37217d40f35240336fec44a15a9706.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-delete.spec.ts:87:7","name":"shows loading state on confirm button while deleting","status":"failed","testResultsByEnv":{"default":"5e9369660770ed94c38389bce1b8622d"}}

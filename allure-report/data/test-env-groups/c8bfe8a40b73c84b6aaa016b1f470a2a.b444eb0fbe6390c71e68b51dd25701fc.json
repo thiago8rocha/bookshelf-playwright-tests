@@ -1,1 +1,1 @@
-{"id":"c8bfe8a40b73c84b6aaa016b1f470a2a.b444eb0fbe6390c71e68b51dd25701fc","fullName":"network/network.spec.ts:12:7","name":"create book sends correct payload to API","status":"passed","testResultsByEnv":{"default":"e802e8dacf459f15e108bb50d38d246a"}}
+{"id":"c8bfe8a40b73c84b6aaa016b1f470a2a.b444eb0fbe6390c71e68b51dd25701fc","fullName":"network/network.spec.ts:12:7","name":"create book sends correct payload to API","status":"failed","testResultsByEnv":{"default":"d88192557b0bbd6d72bd8bd17ed50a51"}}

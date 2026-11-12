@@ -1,1 +1,1 @@
-{"id":"72d4ad14215795b95aa02149b1f55bb1.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/login.spec.ts:23:7","name":"redirects to dashboard if already authenticated","status":"passed","testResultsByEnv":{"default":"e5f8cb3bbf815021819ef652e8662bcc"}}
+{"id":"72d4ad14215795b95aa02149b1f55bb1.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/login.spec.ts:23:7","name":"redirects to dashboard if already authenticated","status":"failed","testResultsByEnv":{"default":"b52fb0022d947b824edcdb88f665796e"}}

@@ -1,1 +1,1 @@
-{"id":"8aec809be1822d1244a95bab8207849b.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:55:7","name":"stats are user-specific","status":"passed","testResultsByEnv":{"default":"0c6bbad9ed462c6b7be1618ed5a1c5b7"}}
+{"id":"8aec809be1822d1244a95bab8207849b.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:55:7","name":"stats are user-specific","status":"failed","testResultsByEnv":{"default":"64154f952aed50972a1dfa1d933e5ad8"}}

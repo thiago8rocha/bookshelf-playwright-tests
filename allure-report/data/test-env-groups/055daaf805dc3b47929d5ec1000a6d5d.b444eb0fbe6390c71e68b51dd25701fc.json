@@ -1,1 +1,1 @@
-{"id":"055daaf805dc3b47929d5ec1000a6d5d.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:128:7","name":"handles books API error gracefully","status":"passed","testResultsByEnv":{"default":"4876eae2eb60602f3c3ef7479bc47b99"}}
+{"id":"055daaf805dc3b47929d5ec1000a6d5d.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:128:7","name":"handles books API error gracefully","status":"failed","testResultsByEnv":{"default":"eead8b7fac123ae873ba50720c52e388"}}

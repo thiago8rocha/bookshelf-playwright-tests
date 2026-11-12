@@ -1,1 +1,1 @@
-{"id":"7acad579aa0da391e835fc4ebd1aaafd.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-delete.spec.ts:109:7","name":"handles delete API failure gracefully","status":"passed","testResultsByEnv":{"default":"26bd08e2de1626994f341c3544ac1288"}}
+{"id":"7acad579aa0da391e835fc4ebd1aaafd.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-delete.spec.ts:109:7","name":"handles delete API failure gracefully","status":"failed","testResultsByEnv":{"default":"4908e8c0305227aa6130b3fd66e12fb2"}}

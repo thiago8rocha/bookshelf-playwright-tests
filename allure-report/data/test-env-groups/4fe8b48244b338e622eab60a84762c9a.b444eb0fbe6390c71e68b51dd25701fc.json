@@ -1,1 +1,1 @@
-{"id":"4fe8b48244b338e622eab60a84762c9a.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:16:7","name":"creates a book with required fields @smoke","status":"passed","testResultsByEnv":{"default":"a8b9c59a961398bf411d90fcf90f09dd"}}
+{"id":"4fe8b48244b338e622eab60a84762c9a.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:16:7","name":"creates a book with required fields @smoke","status":"failed","testResultsByEnv":{"default":"61a42b849a9f8fbbdb560393a77243b0"}}

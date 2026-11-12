@@ -1,1 +1,1 @@
-{"id":"b9b904a6271eebebf2ca01791e63adb7.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/roles.spec.ts:15:7","name":"cannot sign up without choosing any use","status":"passed","testResultsByEnv":{"default":"89bb2d5e5144855c946a646cdbc9b1ee"}}
+{"id":"b9b904a6271eebebf2ca01791e63adb7.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/roles.spec.ts:15:7","name":"cannot sign up without choosing any use","status":"failed","testResultsByEnv":{"default":"82a9e13899284c0aba9d036413125c5f"}}

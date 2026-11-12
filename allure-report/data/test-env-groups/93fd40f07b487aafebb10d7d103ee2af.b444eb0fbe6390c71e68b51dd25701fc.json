@@ -1,1 +1,1 @@
-{"id":"93fd40f07b487aafebb10d7d103ee2af.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/register.spec.ts:85:7","name":"disables register button while request is in flight","status":"passed","testResultsByEnv":{"default":"33daad2cea8cadb7e418480bf2ceb65a"}}
+{"id":"93fd40f07b487aafebb10d7d103ee2af.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/register.spec.ts:85:7","name":"disables register button while request is in flight","status":"failed","testResultsByEnv":{"default":"d34223257d962a7d8de51bc3121be80f"}}

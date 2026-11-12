@@ -1,1 +1,1 @@
-{"id":"dd9f91800190bf34ca2d4df7876630ee.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"visual/visual.spec.ts:115:9","name":"dashboard with mixed book statuses matches snapshot","status":"passed","testResultsByEnv":{"default":"3263546221817b1686537fc443fc6c86"}}
+{"id":"dd9f91800190bf34ca2d4df7876630ee.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"visual/visual.spec.ts:115:9","name":"dashboard with mixed book statuses matches snapshot","status":"skipped","testResultsByEnv":{"default":"fdd300e610fce6adaa93c511b120e876"}}

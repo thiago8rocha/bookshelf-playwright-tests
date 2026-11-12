@@ -1,1 +1,1 @@
-{"id":"062f8376fb0bd15673c81bb4c35b68df.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/roles.spec.ts:61:7","name":"only sellers can open the company form","status":"passed","testResultsByEnv":{"default":"1b1f8aae6c8281c1ca9cb4e462cd6cd4"}}
+{"id":"062f8376fb0bd15673c81bb4c35b68df.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/roles.spec.ts:61:7","name":"only sellers can open the company form","status":"failed","testResultsByEnv":{"default":"58edf0c0904fe22a79d7f3f048907d20"}}
