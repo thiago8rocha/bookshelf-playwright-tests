@@ -1,1 +1,1 @@
-{"id":"bc3472647383259dd09a7fcbe34e072d.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/terms.spec.ts:22:7","name":"the API records the accepted terms on sign-up","status":"passed","testResultsByEnv":{"default":"b0d79531fb5ac006da37fbd5f1306a01"}}
+{"id":"bc3472647383259dd09a7fcbe34e072d.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/terms.spec.ts:22:7","name":"the API records the accepted terms on sign-up","status":"passed","testResultsByEnv":{"default":"0b04bd175a70aefa0a257eeda4794d2a"}}

@@ -1,2 +1,0 @@
-/home/runner/work/bookshelf-playwright-tests/bookshelf-playwright-tests/tests/visual/visual.spec.ts-snapshots/modal-edit-book-firefox-linux.png is re-generated, writing actual.
-/home/runner/work/bookshelf-playwright-tests/bookshelf-playwright-tests/tests/visual/visual.spec.ts-snapshots/modal-edit-book-firefox-linux.png is re-generated, writing actual.

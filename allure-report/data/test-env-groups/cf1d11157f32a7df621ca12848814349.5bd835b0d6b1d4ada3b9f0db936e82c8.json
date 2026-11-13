@@ -1,1 +1,1 @@
-{"id":"cf1d11157f32a7df621ca12848814349.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"catalog/catalog-moderation.spec.ts:177:7","name":"only admins can open the catalog moderation page","status":"passed","testResultsByEnv":{"default":"17234f04ae47e100272eaf1fc1f0ed22"}}
+{"id":"cf1d11157f32a7df621ca12848814349.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"catalog/catalog-moderation.spec.ts:177:7","name":"only admins can open the catalog moderation page","status":"passed","testResultsByEnv":{"default":"05dab97c97ed957ec7cb86a1c2a3f1c3"}}
