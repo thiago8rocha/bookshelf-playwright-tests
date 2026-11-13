@@ -1,1 +1,1 @@
-{"id":"bc4ead087240f713b6ae6529a058efbf.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/admin-users.spec.ts:14:7","name":"an admin finds a user by email and sees their roles and status","status":"failed","testResultsByEnv":{"default":"e2c0ea49977c33276003eba529101bd6"}}
+{"id":"bc4ead087240f713b6ae6529a058efbf.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/admin-users.spec.ts:14:7","name":"an admin finds a user by email and sees their roles and status","status":"passed","testResultsByEnv":{"default":"80967eb5f3fbf8291b5230ee2a8e6773"}}

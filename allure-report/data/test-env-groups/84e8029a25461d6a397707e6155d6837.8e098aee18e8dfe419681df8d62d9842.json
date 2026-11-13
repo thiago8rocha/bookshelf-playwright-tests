@@ -1,1 +1,1 @@
-{"id":"84e8029a25461d6a397707e6155d6837.8e098aee18e8dfe419681df8d62d9842","fullName":"dashboard/dashboard.spec.ts:67:7","name":"shows empty state message when no books","status":"failed","testResultsByEnv":{"default":"1a4af99ff56667b0552afd512e6d075c"}}
+{"id":"84e8029a25461d6a397707e6155d6837.8e098aee18e8dfe419681df8d62d9842","fullName":"dashboard/dashboard.spec.ts:67:7","name":"shows empty state message when no books","status":"passed","testResultsByEnv":{"default":"93f1733b97f45b06e9d761250a097daf"}}

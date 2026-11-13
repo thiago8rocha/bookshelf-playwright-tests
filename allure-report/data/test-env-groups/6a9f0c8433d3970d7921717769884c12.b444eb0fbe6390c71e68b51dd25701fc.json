@@ -1,1 +1,1 @@
-{"id":"6a9f0c8433d3970d7921717769884c12.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:114:7","name":"a declined card leaves the order awaiting payment and can be retried","status":"failed","testResultsByEnv":{"default":"36cd8feb5c1769d38b1307a3ea514dae"}}
+{"id":"6a9f0c8433d3970d7921717769884c12.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:114:7","name":"a declined card leaves the order awaiting payment and can be retried","status":"passed","testResultsByEnv":{"default":"c26ac1e8673f285285f34fae2b720c5e"}}

@@ -1,1 +1,1 @@
-{"id":"312ee59b99b6f2d80bf1c24e7ca3ca48.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-status.spec.ts:6:7","name":"a new book starts as \"to read\"","status":"failed","testResultsByEnv":{"default":"a66674a5e32acdb14c0a3e91e19adfd2"}}
+{"id":"312ee59b99b6f2d80bf1c24e7ca3ca48.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-status.spec.ts:6:7","name":"a new book starts as \"to read\"","status":"passed","testResultsByEnv":{"default":"405c30af24ff64e6724ec6d79603067c"}}

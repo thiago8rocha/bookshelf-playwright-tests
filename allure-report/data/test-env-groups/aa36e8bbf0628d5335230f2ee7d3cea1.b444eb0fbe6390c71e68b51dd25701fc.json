@@ -1,1 +1,1 @@
-{"id":"aa36e8bbf0628d5335230f2ee7d3cea1.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:31:7","name":"stats total reflects number of books","status":"failed","testResultsByEnv":{"default":"b8d26f74619fd47b3d968baba5778c8d"}}
+{"id":"aa36e8bbf0628d5335230f2ee7d3cea1.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:31:7","name":"stats total reflects number of books","status":"passed","testResultsByEnv":{"default":"e359d2058fba279d578f4fb26cbc7372"}}

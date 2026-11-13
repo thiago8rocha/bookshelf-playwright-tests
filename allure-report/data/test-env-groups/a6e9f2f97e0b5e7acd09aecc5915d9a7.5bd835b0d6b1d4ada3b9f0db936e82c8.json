@@ -1,1 +1,1 @@
-{"id":"a6e9f2f97e0b5e7acd09aecc5915d9a7.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"e2e/user-journey.spec.ts:8:7","name":"complete journey: register → create → edit → delete → logout @smoke","status":"failed","testResultsByEnv":{"default":"764512ea5dda09619592aa8d9c44560f"}}
+{"id":"a6e9f2f97e0b5e7acd09aecc5915d9a7.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"e2e/user-journey.spec.ts:8:7","name":"complete journey: register → create → edit → delete → logout @smoke","status":"passed","testResultsByEnv":{"default":"05f4b8f9b2e8f1c96a6fed8f878e0156"}}

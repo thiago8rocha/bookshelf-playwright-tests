@@ -1,1 +1,1 @@
-{"id":"6f1a296c258d1678b6e5c258d2b5991e.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:25:7","name":"shows username in header","status":"failed","testResultsByEnv":{"default":"6f30fb68ab35d07d4d235fad53576ce6"}}
+{"id":"6f1a296c258d1678b6e5c258d2b5991e.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:25:7","name":"shows username in header","status":"passed","testResultsByEnv":{"default":"22e6fb76caa997820c16efc537e0eb30"}}

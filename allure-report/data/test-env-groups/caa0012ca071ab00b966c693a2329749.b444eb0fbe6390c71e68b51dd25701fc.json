@@ -1,1 +1,1 @@
-{"id":"caa0012ca071ab00b966c693a2329749.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:225:7","name":"a seller pauses a listing and it leaves the bookstore","status":"failed","testResultsByEnv":{"default":"fa68fed49cd18b4f0a7568eb5cd25f04"}}
+{"id":"caa0012ca071ab00b966c693a2329749.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:225:7","name":"a seller pauses a listing and it leaves the bookstore","status":"passed","testResultsByEnv":{"default":"355a8dc5928afbe098b13e8a1e8adfd7"}}

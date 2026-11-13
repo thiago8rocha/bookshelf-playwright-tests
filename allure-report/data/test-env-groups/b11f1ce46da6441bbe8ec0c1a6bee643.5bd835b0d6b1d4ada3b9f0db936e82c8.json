@@ -1,1 +1,1 @@
-{"id":"b11f1ce46da6441bbe8ec0c1a6bee643.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/profile.spec.ts:19:7","name":"changing the password lets the user sign in with the new one only","status":"failed","testResultsByEnv":{"default":"dc128376e846f55915c8cd6e5e8e7934"}}
+{"id":"b11f1ce46da6441bbe8ec0c1a6bee643.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/profile.spec.ts:19:7","name":"changing the password lets the user sign in with the new one only","status":"passed","testResultsByEnv":{"default":"9dc3293d14c94d1da6f6d0cf9525c47f"}}

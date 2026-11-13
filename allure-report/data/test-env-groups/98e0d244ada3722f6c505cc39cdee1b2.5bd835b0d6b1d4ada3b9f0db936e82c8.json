@@ -1,1 +1,1 @@
-{"id":"98e0d244ada3722f6c505cc39cdee1b2.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"visual/visual.spec.ts:151:9","name":"delete confirmation modal matches snapshot","status":"skipped","testResultsByEnv":{"default":"c5af0ea4b725bee63449cf8cc239f579"}}
+{"id":"98e0d244ada3722f6c505cc39cdee1b2.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"visual/visual.spec.ts:151:9","name":"delete confirmation modal matches snapshot","status":"passed","testResultsByEnv":{"default":"03a07155e302e9244773e601e583af87"}}

@@ -1,1 +1,1 @@
-{"id":"7ea0a6ae6c96d538fd524d364b48e07b.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/login.spec.ts:53:7","name":"stays on /login with wrong password","status":"failed","testResultsByEnv":{"default":"eb04368e7425a05898b3e523294bb7db"}}
+{"id":"7ea0a6ae6c96d538fd524d364b48e07b.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/login.spec.ts:53:7","name":"stays on /login with wrong password","status":"passed","testResultsByEnv":{"default":"acf1b99bd601bfc1a4a70b20ebf1eba6"}}

@@ -1,1 +1,1 @@
-{"id":"575c244398e00b3c6b3863543a64dbce.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-rating-notes.spec.ts:46:7","name":"clearing the rating and notes while editing removes them","status":"failed","testResultsByEnv":{"default":"f45765992672ce5e745296195abcc2b6"}}
+{"id":"575c244398e00b3c6b3863543a64dbce.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-rating-notes.spec.ts:46:7","name":"clearing the rating and notes while editing removes them","status":"passed","testResultsByEnv":{"default":"d91b14ba0e7ac1d05578f5fc36d58403"}}

@@ -1,1 +1,1 @@
-{"id":"842407277f93ff06c656ff80bd2b5391.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/company.spec.ts:111:7","name":"the account page links admins to the verification page","status":"failed","testResultsByEnv":{"default":"1cf34e35c81ada56b17526c4ed42308a"}}
+{"id":"842407277f93ff06c656ff80bd2b5391.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/company.spec.ts:111:7","name":"the account page links admins to the verification page","status":"passed","testResultsByEnv":{"default":"bc726db2e252c9772015da2fef1bce7c"}}

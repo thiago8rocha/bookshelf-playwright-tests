@@ -1,1 +1,1 @@
-{"id":"ffe99a4984c71bd51f859ca1c9344615.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:91:7","name":"cannot save without author — modal stays open","status":"failed","testResultsByEnv":{"default":"737e8b32cef1db49060f6d6ddcc48a5d"}}
+{"id":"ffe99a4984c71bd51f859ca1c9344615.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:91:7","name":"cannot save without author — modal stays open","status":"passed","testResultsByEnv":{"default":"cfa31e1d6f5fb52aae263afb5b204ee5"}}

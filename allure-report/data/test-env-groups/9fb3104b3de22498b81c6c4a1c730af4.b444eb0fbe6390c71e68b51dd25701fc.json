@@ -1,1 +1,1 @@
-{"id":"9fb3104b3de22498b81c6c4a1c730af4.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-status.spec.ts:34:7","name":"the new status persists after reloading the page","status":"failed","testResultsByEnv":{"default":"ea1a96b23df122e4c7a86bee3f67a3d3"}}
+{"id":"9fb3104b3de22498b81c6c4a1c730af4.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-status.spec.ts:34:7","name":"the new status persists after reloading the page","status":"passed","testResultsByEnv":{"default":"bc19ec84fefeec4b15b07458c1aa2f8d"}}
