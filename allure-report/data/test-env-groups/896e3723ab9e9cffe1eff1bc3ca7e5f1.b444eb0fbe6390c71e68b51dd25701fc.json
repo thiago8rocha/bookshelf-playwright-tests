@@ -1,1 +1,1 @@
-{"id":"896e3723ab9e9cffe1eff1bc3ca7e5f1.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:105:7","name":"cancel discards the filled form","status":"passed","testResultsByEnv":{"default":"c41e3f68c2403cbb4af5285de01e4dbf"}}
+{"id":"896e3723ab9e9cffe1eff1bc3ca7e5f1.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:105:7","name":"cancel discards the filled form","status":"failed","testResultsByEnv":{"default":"5d7edccaef8710299a2b9457fabbd52f"}}

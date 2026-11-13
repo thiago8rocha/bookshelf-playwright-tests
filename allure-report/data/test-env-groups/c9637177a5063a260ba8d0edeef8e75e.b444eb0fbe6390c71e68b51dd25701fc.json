@@ -1,1 +1,1 @@
-{"id":"c9637177a5063a260ba8d0edeef8e75e.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:38:7","name":"stats by-status reflect book statuses","status":"passed","testResultsByEnv":{"default":"0973b0f3ba681921be6bab5ee1d227e7"}}
+{"id":"c9637177a5063a260ba8d0edeef8e75e.b444eb0fbe6390c71e68b51dd25701fc","fullName":"dashboard/dashboard.spec.ts:38:7","name":"stats by-status reflect book statuses","status":"failed","testResultsByEnv":{"default":"7612013c86f845733abc69c236413ccd"}}

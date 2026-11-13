@@ -1,1 +1,1 @@
-{"id":"2af4838e52345c8b1fe9dd1bfcc02216.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/session.spec.ts:7:7","name":"session persists after page reload","status":"passed","testResultsByEnv":{"default":"742d5a28b14caa65f5050a08bb8b1e80"}}
+{"id":"2af4838e52345c8b1fe9dd1bfcc02216.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/session.spec.ts:7:7","name":"session persists after page reload","status":"failed","testResultsByEnv":{"default":"e389312b1fd8180d0df35790929bff36"}}

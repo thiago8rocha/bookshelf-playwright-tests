@@ -1,0 +1,66 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation "Navegação principal" [ref=e5]:
+      - link "Sobre" [ref=e6] [cursor=pointer]:
+        - /url: /about
+      - group "Tema" [ref=e7]:
+        - button "Sistema" [pressed] [ref=e8] [cursor=pointer]:
+          - img [ref=e9]
+        - button "Claro" [ref=e13] [cursor=pointer]:
+          - img [ref=e14]
+        - button "Escuro" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - group "Idioma" [ref=e27]:
+        - button "PT" [pressed] [ref=e28] [cursor=pointer]
+        - button "EN" [ref=e29] [cursor=pointer]
+  - main [ref=e30]:
+    - region "Sobre o Tsundoku" [ref=e31]:
+      - img "Tsundoku" [ref=e33]
+      - paragraph [ref=e34]: Sua estante de leituras, com um sebo dentro.
+      - paragraph [ref=e35]: "Tsundoku: palavra japonesa para a pilha de livros que você ainda pretende ler."
+      - list [ref=e36]:
+        - listitem [ref=e37]:
+          - img [ref=e38]
+          - generic [ref=e41]: Acompanhe suas leituras e monte sua estante
+        - listitem [ref=e42]:
+          - img [ref=e43]
+          - generic [ref=e47]: Compre e venda livros usados no sebo (simulado, sem dinheiro de verdade)
+        - listitem [ref=e48]:
+          - img [ref=e49]
+          - generic [ref=e53]: Pratique testes manuais, de API e de automação em um ambiente feito para isso
+      - link "Por que Tsundoku?" [ref=e54] [cursor=pointer]:
+        - /url: /about
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - heading "Tsundoku" [level=1] [ref=e58]
+        - paragraph [ref=e59]: Sua biblioteca pessoal na nuvem
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: E-mail
+          - generic [ref=e63]:
+            - img
+            - textbox "E-mail para login" [ref=e64]:
+              - /placeholder: seu@email.com
+        - generic [ref=e65]:
+          - generic [ref=e66]: Senha
+          - generic [ref=e67]:
+            - img
+            - textbox "Senha para login" [ref=e68]:
+              - /placeholder: ••••••••
+        - button "Entrar" [ref=e69] [cursor=pointer]
+      - paragraph [ref=e71]:
+        - text: Não tem uma conta?
+        - link "Cadastre-se grátis" [ref=e72] [cursor=pointer]:
+          - /url: /register
+  - contentinfo [ref=e73]:
+    - img "Tsundoku" [ref=e75]
+    - navigation "Links do rodapé" [ref=e76]:
+      - link "Sobre o projeto" [ref=e77] [cursor=pointer]:
+        - /url: /about
+      - link "Termos e Privacidade" [ref=e78] [cursor=pointer]:
+        - /url: /terms
+    - paragraph [ref=e79]: Projeto de portfólio e playground de QA. Todos os dados são fictícios.
+```

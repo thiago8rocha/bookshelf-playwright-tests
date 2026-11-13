@@ -1,1 +1,1 @@
-{"id":"82a3e91b94fb85c13382d75632ebbd04.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:248:7","name":"an admin follows an order and takes a listing down","status":"passed","testResultsByEnv":{"default":"ce8f5b4df04a122d65ee1d53d8914b08"}}
+{"id":"82a3e91b94fb85c13382d75632ebbd04.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:248:7","name":"an admin follows an order and takes a listing down","status":"failed","testResultsByEnv":{"default":"5bff4083a98822d0dd6ac7473675e590"}}

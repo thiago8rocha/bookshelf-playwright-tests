@@ -1,1 +1,1 @@
-{"id":"0252a24738494b042d59eb0abcdf31db.8e098aee18e8dfe419681df8d62d9842","fullName":"dashboard/theme.spec.ts:7:7","name":"lets the user pick light, dark or system and remembers the choice","status":"passed","testResultsByEnv":{"default":"ffd254c513d977c8f1fbc6cce3a192f9"}}
+{"id":"0252a24738494b042d59eb0abcdf31db.8e098aee18e8dfe419681df8d62d9842","fullName":"dashboard/theme.spec.ts:7:7","name":"lets the user pick light, dark or system and remembers the choice","status":"failed","testResultsByEnv":{"default":"10c2c4246cdfdc0a78f9b754377f32d6"}}

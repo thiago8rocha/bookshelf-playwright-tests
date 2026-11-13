@@ -1,1 +1,1 @@
-{"id":"eecfa110a179f18d08574889eabcba73.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-delete.spec.ts:71:7","name":"confirmation modal shows book title","status":"passed","testResultsByEnv":{"default":"8c048a287aacd37441ad1ba6d33d54fc"}}
+{"id":"eecfa110a179f18d08574889eabcba73.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-delete.spec.ts:71:7","name":"confirmation modal shows book title","status":"failed","testResultsByEnv":{"default":"b4574d882278cd6d87bbf1eab7eee36b"}}

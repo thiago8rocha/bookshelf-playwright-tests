@@ -1,1 +1,1 @@
-{"id":"a4c3bcee6ccee7b8670eed27fd004e5d.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-pagination.spec.ts:46:7","name":"steps back a page when the last book of the last page is deleted","status":"passed","testResultsByEnv":{"default":"a5319d0e0491b8412aec99979fd6f7a5"}}
+{"id":"a4c3bcee6ccee7b8670eed27fd004e5d.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-pagination.spec.ts:46:7","name":"steps back a page when the last book of the last page is deleted","status":"failed","testResultsByEnv":{"default":"57c9a6d0665021ca3270e85838a7e37c"}}

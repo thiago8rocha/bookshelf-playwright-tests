@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation "Navegação principal" [ref=e5]:
+      - link "Sobre" [ref=e6] [cursor=pointer]:
+        - /url: /about
+      - group "Tema" [ref=e7]:
+        - button "Sistema" [pressed] [ref=e8] [cursor=pointer]:
+          - img [ref=e9]
+        - button "Claro" [ref=e11] [cursor=pointer]:
+          - img [ref=e12]
+        - button "Escuro" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+      - group "Idioma" [ref=e21]:
+        - button "PT" [pressed] [ref=e22] [cursor=pointer]
+        - button "EN" [ref=e23] [cursor=pointer]
+  - main [ref=e24]:
+    - region "Sobre o Tsundoku" [ref=e25]:
+      - img "Tsundoku" [ref=e27]
+      - paragraph [ref=e28]: Sua estante de leituras, com um sebo dentro.
+      - paragraph [ref=e29]: "Tsundoku: palavra japonesa para a pilha de livros que você ainda pretende ler."
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - heading "Tsundoku" [level=1] [ref=e33]
+        - paragraph [ref=e34]: Sua biblioteca pessoal na nuvem
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: E-mail
+          - generic [ref=e38]:
+            - img
+            - textbox "E-mail para login" [ref=e39]:
+              - /placeholder: seu@email.com
+        - generic [ref=e40]:
+          - generic [ref=e41]: Senha
+          - generic [ref=e42]:
+            - img
+            - textbox "Senha para login" [ref=e43]:
+              - /placeholder: ••••••••
+        - button "Entrar" [ref=e44] [cursor=pointer]
+      - paragraph [ref=e46]:
+        - text: Não tem uma conta?
+        - link "Cadastre-se grátis" [ref=e47] [cursor=pointer]:
+          - /url: /register
+  - contentinfo [ref=e48]:
+    - img "Tsundoku" [ref=e50]
+    - navigation "Links do rodapé" [ref=e51]:
+      - link "Sobre o projeto" [ref=e52] [cursor=pointer]:
+        - /url: /about
+      - link "Termos e Privacidade" [ref=e53] [cursor=pointer]:
+        - /url: /terms
+    - paragraph [ref=e54]: Projeto de portfólio e playground de QA. Todos os dados são fictícios.
+```

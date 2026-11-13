@@ -1,1 +1,1 @@
-{"id":"8402a9421dca16f3e7c6d5dac08a9538.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:59:7","name":"can create multiple books sequentially","status":"passed","testResultsByEnv":{"default":"a64758612f296606db42c5dc2784b462"}}
+{"id":"8402a9421dca16f3e7c6d5dac08a9538.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:59:7","name":"can create multiple books sequentially","status":"failed","testResultsByEnv":{"default":"108e91bad6320e7ab8cd15d9035f86e7"}}

@@ -1,1 +1,1 @@
-{"id":"0fbee70549a6b95ed480b18c275af705.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"network/network.spec.ts:61:7","name":"dashboard shows loading indicator while fetching data","status":"passed","testResultsByEnv":{"default":"2d03bf226114b0c2281ffbf56b2a18a2"}}
+{"id":"0fbee70549a6b95ed480b18c275af705.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"network/network.spec.ts:61:7","name":"dashboard shows loading indicator while fetching data","status":"failed","testResultsByEnv":{"default":"4b3f8425e19a39bacf8eaace0fa108e1"}}

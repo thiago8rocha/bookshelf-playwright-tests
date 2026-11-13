@@ -1,1 +1,1 @@
-{"id":"d062c646431ff9187bf192e236455417.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:136:7","name":"a real card number is refused, never accepted","status":"passed","testResultsByEnv":{"default":"1f2483161f2c70066196855e1d07a274"}}
+{"id":"d062c646431ff9187bf192e236455417.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:136:7","name":"a real card number is refused, never accepted","status":"failed","testResultsByEnv":{"default":"a854ae67c36b46e58f1656aa080b3dd2"}}

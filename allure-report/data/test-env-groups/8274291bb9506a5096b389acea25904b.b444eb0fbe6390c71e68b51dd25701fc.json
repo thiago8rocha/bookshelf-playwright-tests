@@ -1,1 +1,1 @@
-{"id":"8274291bb9506a5096b389acea25904b.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-delete.spec.ts:43:7","name":"shows empty state after deleting all books","status":"passed","testResultsByEnv":{"default":"aa95a5466e1fa1702db34d50b6da1d66"}}
+{"id":"8274291bb9506a5096b389acea25904b.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-delete.spec.ts:43:7","name":"shows empty state after deleting all books","status":"failed","testResultsByEnv":{"default":"9e0a343371454d72c7893752187295f5"}}

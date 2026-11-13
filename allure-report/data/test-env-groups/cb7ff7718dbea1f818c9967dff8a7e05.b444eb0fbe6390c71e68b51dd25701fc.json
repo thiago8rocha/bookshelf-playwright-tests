@@ -1,1 +1,1 @@
-{"id":"cb7ff7718dbea1f818c9967dff8a7e05.b444eb0fbe6390c71e68b51dd25701fc","fullName":"network/network.spec.ts:89:7","name":"UI stays responsive while API is slow","status":"passed","testResultsByEnv":{"default":"34f852f1eb2276bf051b959c61a723eb"}}
+{"id":"cb7ff7718dbea1f818c9967dff8a7e05.b444eb0fbe6390c71e68b51dd25701fc","fullName":"network/network.spec.ts:89:7","name":"UI stays responsive while API is slow","status":"failed","testResultsByEnv":{"default":"042ca17ce05bf76001be6d6ad011ef3a"}}

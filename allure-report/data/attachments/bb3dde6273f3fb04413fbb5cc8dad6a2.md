@@ -1,0 +1,75 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation "Navegação principal" [ref=e5]:
+      - link "Sobre" [ref=e6] [cursor=pointer]:
+        - /url: /about
+      - group "Tema" [ref=e7]:
+        - button "Sistema" [pressed] [ref=e8] [cursor=pointer]:
+          - img [ref=e9]
+        - button "Claro" [ref=e11] [cursor=pointer]:
+          - img [ref=e12]
+        - button "Escuro" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+      - group "Idioma" [ref=e21]:
+        - button "PT" [pressed] [ref=e22] [cursor=pointer]
+        - button "EN" [ref=e23] [cursor=pointer]
+  - main [ref=e24]:
+    - region "Sobre o Tsundoku" [ref=e25]:
+      - img "Tsundoku" [ref=e27]
+      - paragraph [ref=e28]: Sua estante de leituras, com um sebo dentro.
+      - paragraph [ref=e29]: "Tsundoku: palavra japonesa para a pilha de livros que você ainda pretende ler."
+      - list [ref=e30]:
+        - listitem [ref=e31]:
+          - img [ref=e32]
+          - generic [ref=e35]: Acompanhe suas leituras e monte sua estante
+        - listitem [ref=e36]:
+          - img [ref=e37]
+          - generic [ref=e40]: Compre e venda livros usados no sebo (simulado, sem dinheiro de verdade)
+        - listitem [ref=e41]:
+          - img [ref=e42]
+          - generic [ref=e44]: Pratique testes manuais, de API e de automação em um ambiente feito para isso
+      - link "Por que Tsundoku?" [ref=e45] [cursor=pointer]:
+        - /url: /about
+    - generic [ref=e47]:
+      - heading "Bem-vindo" [level=1] [ref=e49]
+      - note [ref=e50]: "Projeto de testes: cadastre-se com dados fictícios, nunca com dados reais."
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: Nome Completo
+          - generic [ref=e54]:
+            - img
+            - textbox "Nome completo" [ref=e55]:
+              - /placeholder: João Silva
+              - text: Test User 1794598083324-8ofxq
+        - generic [ref=e56]:
+          - generic [ref=e57]: E-mail
+          - generic [ref=e58]:
+            - img
+            - textbox "E-mail para cadastro" [ref=e59]:
+              - /placeholder: seu@email.com
+              - text: user-1794598083324-8ofxq@test.com
+        - generic [ref=e60]:
+          - generic [ref=e61]: Senha
+          - generic [ref=e62]:
+            - img
+            - textbox "Senha (mínimo 8 caracteres)" [active] [ref=e63]:
+              - /placeholder: ••••••••
+              - text: Test@123456
+          - paragraph [ref=e64]: Mínimo 8 caracteres
+        - button "Continuar" [ref=e65] [cursor=pointer]
+      - paragraph [ref=e67]:
+        - text: Já tem uma conta?
+        - link "Entrar" [ref=e68] [cursor=pointer]:
+          - /url: /login
+  - contentinfo [ref=e69]:
+    - img "Tsundoku" [ref=e71]
+    - navigation "Links do rodapé" [ref=e72]:
+      - link "Sobre o projeto" [ref=e73] [cursor=pointer]:
+        - /url: /about
+      - link "Termos e Privacidade" [ref=e74] [cursor=pointer]:
+        - /url: /terms
+    - paragraph [ref=e75]: Projeto de portfólio e playground de QA. Todos os dados são fictícios.
+```

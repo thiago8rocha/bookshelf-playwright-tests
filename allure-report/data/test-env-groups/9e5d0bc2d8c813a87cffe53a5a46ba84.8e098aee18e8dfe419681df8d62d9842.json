@@ -1,1 +1,1 @@
-{"id":"9e5d0bc2d8c813a87cffe53a5a46ba84.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/session.spec.ts:39:7","name":"back button after logout does not restore session","status":"passed","testResultsByEnv":{"default":"b05b941853430efa4b1bc5085ede7cff"}}
+{"id":"9e5d0bc2d8c813a87cffe53a5a46ba84.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/session.spec.ts:39:7","name":"back button after logout does not restore session","status":"failed","testResultsByEnv":{"default":"e34a3e238703e22447657f405155ebb0"}}

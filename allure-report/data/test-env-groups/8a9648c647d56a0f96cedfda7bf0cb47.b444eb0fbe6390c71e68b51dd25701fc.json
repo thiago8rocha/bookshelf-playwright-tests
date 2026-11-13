@@ -1,1 +1,1 @@
-{"id":"8a9648c647d56a0f96cedfda7bf0cb47.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-import-cover.spec.ts:99:7","name":"shows the cover of a book saved with a cover URL","status":"passed","testResultsByEnv":{"default":"a41215fac7fab1e058db19ee7b848c4e"}}
+{"id":"8a9648c647d56a0f96cedfda7bf0cb47.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-import-cover.spec.ts:99:7","name":"shows the cover of a book saved with a cover URL","status":"failed","testResultsByEnv":{"default":"7a81b495ca297e2f7cb9c7202f65e44f"}}
