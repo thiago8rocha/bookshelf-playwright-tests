@@ -24,7 +24,7 @@ const GOOGLE_BOOKS_URL = /googleapis\.com\/books\/v1\/volumes/
 const CORS = { 'access-control-allow-origin': '*' }
 
 async function mockCovers(page: Page) {
-  await page.route('https://covers.test/**', (route) =>
+  await page.route('https://placehold.co/**', (route) =>
     route.fulfill({ body: PIXEL, contentType: 'image/png', headers: CORS }),
   )
 }
@@ -53,7 +53,7 @@ test.describe('Books — Google Books import and covers', () => {
                 pageCount: 321,
                 language: 'pt',
                 industryIdentifiers: [{ type: 'ISBN_13', identifier: generateIsbn() }],
-                imageLinks: { thumbnail: 'http://covers.test/cover.png' },
+                imageLinks: { thumbnail: 'http://placehold.co/cover.png' },
               },
             },
           ],
@@ -73,7 +73,7 @@ test.describe('Books — Google Books import and covers', () => {
     await expect(modal.titleInput).toHaveValue(title)
     await expect(modal.authorInput).toHaveValue('Autora de Teste')
     await expect(page.locator('#pages')).toHaveValue('321')
-    await expect(page.getByTestId('book-cover-input')).toHaveValue('https://covers.test/cover.png')
+    await expect(page.getByTestId('book-cover-input')).toHaveValue('https://placehold.co/cover.png')
 
     await modal.submit()
     await modal.waitForClose()
@@ -103,7 +103,7 @@ test.describe('Books — Google Books import and covers', () => {
     cleanupBooks,
   }) => {
     await mockCovers(page)
-    const book = await createBook(request, userToken, { coverUrl: 'https://covers.test/mine.png' })
+    const book = await createBook(request, userToken, { coverUrl: 'https://placehold.co/mine.png' })
     await page.reload()
 
     await expect(page.getByTestId(`book-cover-${book.id}`)).toBeVisible()
@@ -115,8 +115,8 @@ test.describe('Books — Google Books import and covers', () => {
     userToken,
     cleanupBooks,
   }) => {
-    await page.route('https://covers.test/**', (route) => route.abort())
-    const book = await createBook(request, userToken, { coverUrl: 'https://covers.test/broken.png' })
+    await page.route('https://placehold.co/**', (route) => route.abort())
+    const book = await createBook(request, userToken, { coverUrl: 'https://placehold.co/broken.png' })
     await page.reload()
 
     await expect(page.getByTestId(`book-item-${book.id}`)).toBeVisible()
@@ -132,7 +132,7 @@ test.describe('Books — Google Books import and covers', () => {
     await new DashboardPage(page).addBookButton.click()
     await modal.waitForOpen()
 
-    await page.getByTestId('book-cover-input').fill('https://covers.test/manual.png')
+    await page.getByTestId('book-cover-input').fill('https://placehold.co/manual.png')
 
     await expect(modal.modal.locator('img[alt="Pré-visualização da capa"]')).toBeVisible()
   })
