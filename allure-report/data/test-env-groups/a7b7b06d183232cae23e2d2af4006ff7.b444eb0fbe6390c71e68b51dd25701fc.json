@@ -1,1 +1,1 @@
-{"id":"a7b7b06d183232cae23e2d2af4006ff7.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:131:7","name":"shows error when API fails on save","status":"failed","testResultsByEnv":{"default":"3891802db0f6c885d24a8aab92334063"}}
+{"id":"a7b7b06d183232cae23e2d2af4006ff7.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-create.spec.ts:131:7","name":"shows error when API fails on save","status":"passed","testResultsByEnv":{"default":"797ea5b5aa70c8bcda1d6356a7854e8c"}}

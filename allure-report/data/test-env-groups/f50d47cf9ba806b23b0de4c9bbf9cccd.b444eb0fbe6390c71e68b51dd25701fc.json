@@ -1,1 +1,1 @@
-{"id":"f50d47cf9ba806b23b0de4c9bbf9cccd.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-status.spec.ts:13:7","name":"changing the status updates the select and the stats counters","status":"failed","testResultsByEnv":{"default":"62fb6aba31b3676f471e4c504153d0d3"}}
+{"id":"f50d47cf9ba806b23b0de4c9bbf9cccd.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-status.spec.ts:13:7","name":"changing the status updates the select and the stats counters","status":"passed","testResultsByEnv":{"default":"3e9e77b3f9d38c640eb0631b08b3fcbe"}}

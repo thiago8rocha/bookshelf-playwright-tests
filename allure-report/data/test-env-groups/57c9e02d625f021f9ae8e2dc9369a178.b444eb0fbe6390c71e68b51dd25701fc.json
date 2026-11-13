@@ -1,1 +1,1 @@
-{"id":"57c9e02d625f021f9ae8e2dc9369a178.b444eb0fbe6390c71e68b51dd25701fc","fullName":"visual/visual.spec.ts:177:9","name":"dashboard on tablet viewport matches snapshot","status":"skipped","testResultsByEnv":{"default":"5f58ac3e810f8a872cbc9781181949f9"}}
+{"id":"57c9e02d625f021f9ae8e2dc9369a178.b444eb0fbe6390c71e68b51dd25701fc","fullName":"visual/visual.spec.ts:177:9","name":"dashboard on tablet viewport matches snapshot","status":"passed","testResultsByEnv":{"default":"ba7d2e9e233d218db8eff9476a425a50"}}

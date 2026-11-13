@@ -1,1 +1,1 @@
-{"id":"15db76853104c33921044f4d3cd12267.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"store/store.spec.ts:167:7","name":"the last copy leaves the bookstore once someone reserves it","status":"failed","testResultsByEnv":{"default":"4c868cfd296f0f0c161535333a7dbea2"}}
+{"id":"15db76853104c33921044f4d3cd12267.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"store/store.spec.ts:167:7","name":"the last copy leaves the bookstore once someone reserves it","status":"passed","testResultsByEnv":{"default":"a6e2c56b654836e18466ecf89a4dbb37"}}

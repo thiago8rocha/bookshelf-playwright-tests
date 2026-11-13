@@ -1,1 +1,1 @@
-{"id":"73e60b8bd42c587945f7c795c62630e0.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/profile.spec.ts:7:7","name":"changing the name updates the header","status":"failed","testResultsByEnv":{"default":"6bec02ae16f2571e064f882e6eb88f44"}}
+{"id":"73e60b8bd42c587945f7c795c62630e0.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/profile.spec.ts:7:7","name":"changing the name updates the header","status":"passed","testResultsByEnv":{"default":"beb52ecfec64209f0cd8896a04935f97"}}

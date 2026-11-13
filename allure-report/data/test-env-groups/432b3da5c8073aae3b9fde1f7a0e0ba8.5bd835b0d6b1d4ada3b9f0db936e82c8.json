@@ -1,1 +1,1 @@
-{"id":"432b3da5c8073aae3b9fde1f7a0e0ba8.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"visual/wcag.spec.ts:33:7","name":"empty dashboard has no critical a11y violations","status":"failed","testResultsByEnv":{"default":"d1ba093a8f636362019f99509041407e"}}
+{"id":"432b3da5c8073aae3b9fde1f7a0e0ba8.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"visual/wcag.spec.ts:33:7","name":"empty dashboard has no critical a11y violations","status":"passed","testResultsByEnv":{"default":"c57c1fd97524512b0657f5fac245f047"}}

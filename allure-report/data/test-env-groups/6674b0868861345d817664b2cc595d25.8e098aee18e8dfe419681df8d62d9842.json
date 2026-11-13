@@ -1,1 +1,1 @@
-{"id":"6674b0868861345d817664b2cc595d25.8e098aee18e8dfe419681df8d62d9842","fullName":"dashboard/dashboard.spec.ts:87:7","name":"stats update immediately after deleting a book — no reload needed","status":"failed","testResultsByEnv":{"default":"b53e30abd70003199af1b457314442b4"}}
+{"id":"6674b0868861345d817664b2cc595d25.8e098aee18e8dfe419681df8d62d9842","fullName":"dashboard/dashboard.spec.ts:87:7","name":"stats update immediately after deleting a book — no reload needed","status":"passed","testResultsByEnv":{"default":"e1e15d5e22ec7e323f0d12f89643d58f"}}

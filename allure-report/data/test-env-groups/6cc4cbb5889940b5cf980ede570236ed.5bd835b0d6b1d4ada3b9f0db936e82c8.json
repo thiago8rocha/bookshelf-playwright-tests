@@ -1,1 +1,1 @@
-{"id":"6cc4cbb5889940b5cf980ede570236ed.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-edit.spec.ts:84:7","name":"cannot save edit with empty author — modal stays open","status":"failed","testResultsByEnv":{"default":"5f8bafded0cd3bcd2426faaa76fb9d89"}}
+{"id":"6cc4cbb5889940b5cf980ede570236ed.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-edit.spec.ts:84:7","name":"cannot save edit with empty author — modal stays open","status":"passed","testResultsByEnv":{"default":"0a1aa6670c5e2a7555d32b0de7a3bf70"}}

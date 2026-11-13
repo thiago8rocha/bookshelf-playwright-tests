@@ -1,1 +1,1 @@
-{"id":"cb9cb9918cce9eede869b84e4768cda6.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-pagination.spec.ts:9:7","name":"does not render pagination when everything fits in one page","status":"failed","testResultsByEnv":{"default":"428d05bb3d301d07e25f69a0268ee1a9"}}
+{"id":"cb9cb9918cce9eede869b84e4768cda6.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-pagination.spec.ts:9:7","name":"does not render pagination when everything fits in one page","status":"passed","testResultsByEnv":{"default":"5c95cca86b62f5b3050c136047c80340"}}

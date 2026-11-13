@@ -1,1 +1,1 @@
-{"id":"cfd5d25dc983b7dea4b9f41fd2649a07.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/company.spec.ts:94:7","name":"an admin can revoke a verification","status":"failed","testResultsByEnv":{"default":"93b7bafd587d7961272ab8a1a3d34cf0"}}
+{"id":"cfd5d25dc983b7dea4b9f41fd2649a07.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/company.spec.ts:94:7","name":"an admin can revoke a verification","status":"passed","testResultsByEnv":{"default":"61c4a0e7f760a9d52d809b107b1ae21f"}}

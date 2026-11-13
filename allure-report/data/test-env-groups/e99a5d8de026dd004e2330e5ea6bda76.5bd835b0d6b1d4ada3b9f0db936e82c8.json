@@ -1,1 +1,1 @@
-{"id":"e99a5d8de026dd004e2330e5ea6bda76.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-rating-notes.spec.ts:6:7","name":"creates a book with a rating and personal notes","status":"failed","testResultsByEnv":{"default":"40c9ef0c14fd692e4b6f04bb7e09e6b6"}}
+{"id":"e99a5d8de026dd004e2330e5ea6bda76.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-rating-notes.spec.ts:6:7","name":"creates a book with a rating and personal notes","status":"passed","testResultsByEnv":{"default":"2e57019bb0a8e8733adcff64beb77d6c"}}

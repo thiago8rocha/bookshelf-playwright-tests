@@ -1,1 +1,1 @@
-{"id":"698f9f33d09bb92ce09fc54496fcfa69.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/register.spec.ts:49:7","name":"shows error on duplicate email","status":"failed","testResultsByEnv":{"default":"145f31418bb45241baa7c6f4dd8d21ee"}}
+{"id":"698f9f33d09bb92ce09fc54496fcfa69.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/register.spec.ts:49:7","name":"shows error on duplicate email","status":"passed","testResultsByEnv":{"default":"cfb3ce59c08f4dbd25fc0c0750cf22e0"}}

@@ -1,1 +1,1 @@
-{"id":"dbab786e110c3cd281d33d6b0b6e6436.b444eb0fbe6390c71e68b51dd25701fc","fullName":"catalog/catalog-moderation.spec.ts:114:7","name":"rejecting a proposed edit keeps the title and clears the marker","status":"failed","testResultsByEnv":{"default":"1127a650f82c0dd72d4d0219558c820e"}}
+{"id":"dbab786e110c3cd281d33d6b0b6e6436.b444eb0fbe6390c71e68b51dd25701fc","fullName":"catalog/catalog-moderation.spec.ts:114:7","name":"rejecting a proposed edit keeps the title and clears the marker","status":"passed","testResultsByEnv":{"default":"fdd84ae4f9f7d8bd3744c8f79a8595ae"}}

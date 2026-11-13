@@ -1,1 +1,1 @@
-{"id":"3295d1ddcdc11466c3e0584273b8010a.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-import-cover.spec.ts:86:7","name":"shows a message when Google Books finds nothing","status":"failed","testResultsByEnv":{"default":"2f80829158c6fb957fcc808f3c6d8c1e"}}
+{"id":"3295d1ddcdc11466c3e0584273b8010a.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"books/books-import-cover.spec.ts:86:7","name":"shows a message when Google Books finds nothing","status":"passed","testResultsByEnv":{"default":"b0cc42cbe0439039830fbe397abd05aa"}}
