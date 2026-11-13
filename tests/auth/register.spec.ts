@@ -57,17 +57,49 @@ test.describe('Register', () => {
 
   test('blocks submit with short password', async ({ page }) => {
     const creds = generateCredentials()
-    await registerPage.register(creds.name, creds.email, '123')
+    await registerPage.fillAccount(creds.name, creds.email, '123')
+    await registerPage.nextButton.click()
 
     await expect(page).toHaveURL(/\/register/)
-    await expect(page.getByTestId('dashboard-page')).not.toBeVisible()
+    await expect(registerPage.acceptTermsCheckbox).toHaveCount(0)
   })
 
-  test('blocks submit with empty fields', async ({ page }) => {
-    await registerPage.registerButton.click()
+  test('blocks the next step with empty fields', async ({ page }) => {
+    await registerPage.nextButton.click()
 
     await expect(page).toHaveURL(/\/register/)
-    await expect(page.getByTestId('dashboard-page')).not.toBeVisible()
+    await expect(registerPage.acceptTermsCheckbox).toHaveCount(0)
+  })
+
+  test('keeps the submit button disabled until the terms are accepted', async () => {
+    const creds = generateCredentials()
+    await registerPage.continueToUsage(creds.name, creds.email, creds.password)
+
+    await expect(registerPage.registerButton).toBeDisabled()
+    await registerPage.acceptTermsCheckbox.check()
+    await expect(registerPage.registerButton).toBeEnabled()
+  })
+
+  test('goes back to the account step keeping what was typed', async () => {
+    const creds = generateCredentials()
+    await registerPage.continueToUsage(creds.name, creds.email, creds.password)
+
+    await registerPage.backButton.click()
+
+    await expect(registerPage.nameInput).toHaveValue(creds.name)
+    await expect(registerPage.emailInput).toHaveValue(creds.email)
+    await expect(registerPage.nextButton).toBeVisible()
+  })
+
+  test('opens the terms of service from the sign-up form', async ({ page }) => {
+    const creds = generateCredentials()
+    await registerPage.continueToUsage(creds.name, creds.email, creds.password)
+
+    const popup = page.waitForEvent('popup')
+    await page.getByTestId('terms-link').click()
+
+    const terms = await popup
+    await expect(terms.getByTestId('terms-page')).toBeVisible()
   })
 
   // ─── Network interception (Playwright-only) ───────────────────────────────
@@ -89,10 +121,8 @@ test.describe('Register', () => {
     })
 
     const creds = generateCredentials()
-    await registerPage.nameInput.fill(creds.name)
-    await registerPage.emailInput.fill(creds.email)
-    await registerPage.passwordInput.fill(creds.password)
-    await registerPage.registerButton.click()
+    await registerPage.continueToUsage(creds.name, creds.email, creds.password)
+    await registerPage.submit()
 
     await expect(registerPage.registerButton).toBeDisabled()
   })

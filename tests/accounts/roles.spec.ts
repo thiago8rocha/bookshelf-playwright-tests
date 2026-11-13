@@ -5,7 +5,10 @@ import { openAs, registerWithRoles } from '../../helpers/accounts'
 
 test.describe('Accounts — roles at sign-up', () => {
   test('the sign-up form offers the three uses, library selected by default', async ({ page }) => {
-    await new RegisterPage(page).goto()
+    const registerPage = new RegisterPage(page)
+    await registerPage.goto()
+    const credentials = generateCredentials()
+    await registerPage.continueToUsage(credentials.name, credentials.email, credentials.password)
 
     await expect(page.getByTestId('register-role-reader')).toBeChecked()
     await expect(page.getByTestId('register-role-buyer')).not.toBeChecked()
@@ -16,9 +19,10 @@ test.describe('Accounts — roles at sign-up', () => {
     const registerPage = new RegisterPage(page)
     await registerPage.goto()
     const credentials = generateCredentials()
+    await registerPage.continueToUsage(credentials.name, credentials.email, credentials.password)
     await page.getByTestId('register-role-reader').uncheck()
 
-    await registerPage.register(credentials.name, credentials.email, credentials.password)
+    await registerPage.submit()
 
     await expect(registerPage.errorMessage).toContainText('Escolha pelo menos uma opção')
     await expect(page).toHaveURL(/\/register/)
@@ -38,10 +42,11 @@ test.describe('Accounts — roles at sign-up', () => {
     const registerPage = new RegisterPage(page)
     await registerPage.goto()
     const credentials = generateCredentials()
+    await registerPage.continueToUsage(credentials.name, credentials.email, credentials.password)
     await page.getByTestId('register-role-reader').uncheck()
     await page.getByTestId('register-role-buyer').check()
 
-    await registerPage.register(credentials.name, credentials.email, credentials.password)
+    await registerPage.submit()
 
     await expect(page).toHaveURL(/\/account/)
     await expect(page.getByTestId('library-off-notice')).toBeVisible()

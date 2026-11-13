@@ -41,6 +41,9 @@ export class RegisterPage {
   readonly nameInput: Locator
   readonly emailInput: Locator
   readonly passwordInput: Locator
+  readonly nextButton: Locator
+  readonly backButton: Locator
+  readonly acceptTermsCheckbox: Locator
   readonly registerButton: Locator
   readonly errorMessage: Locator
 
@@ -49,6 +52,9 @@ export class RegisterPage {
     this.nameInput = page.getByTestId('name-input')
     this.emailInput = page.getByTestId('email-input')
     this.passwordInput = page.getByTestId('password-input')
+    this.nextButton = page.getByTestId('register-next-button')
+    this.backButton = page.getByTestId('register-back-button')
+    this.acceptTermsCheckbox = page.getByTestId('accept-terms-checkbox')
     this.registerButton = page.getByTestId('register-button')
     this.errorMessage = page.getByTestId('error-message')
   }
@@ -58,11 +64,29 @@ export class RegisterPage {
     await this.page.waitForSelector('[data-testid="register-page"]')
   }
 
-  async register(name: string, email: string, password: string) {
+  /** Step 1: account data. */
+  async fillAccount(name: string, email: string, password: string) {
     await this.nameInput.fill(name)
     await this.emailInput.fill(email)
     await this.passwordInput.fill(password)
+  }
+
+  /** Fills step 1 and moves on to the usage step. */
+  async continueToUsage(name: string, email: string, password: string) {
+    await this.fillAccount(name, email, password)
+    await this.nextButton.click()
+    await this.acceptTermsCheckbox.waitFor()
+  }
+
+  /** Step 2: accepts the terms and submits. */
+  async submit() {
+    await this.acceptTermsCheckbox.check()
     await this.registerButton.click()
+  }
+
+  async register(name: string, email: string, password: string) {
+    await this.continueToUsage(name, email, password)
+    await this.submit()
   }
 }
 

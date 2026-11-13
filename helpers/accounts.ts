@@ -27,7 +27,13 @@ export async function registerWithRoles(
 ): Promise<Session> {
   const credentials = generateCredentials()
   const response = await request.post(`${API_URL}/api/auth/register`, {
-    data: { name: credentials.name, email: credentials.email, password: credentials.password, roles },
+    data: {
+      name: credentials.name,
+      email: credentials.email,
+      password: credentials.password,
+      roles,
+      acceptTerms: true,
+    },
   })
   if (!response.ok()) {
     throw new Error(`Failed to register: ${response.status()} ${await response.text()}`)
@@ -39,7 +45,7 @@ export async function registerWithRoles(
 /** The admin account is shared by every parallel test, so fall back to logging in. */
 export async function adminSession(request: APIRequestContext): Promise<Session> {
   const register = await request.post(`${API_URL}/api/auth/register`, {
-    data: { name: 'Admin', email: ADMIN_EMAIL, password: ADMIN_PASSWORD },
+    data: { name: 'Admin', email: ADMIN_EMAIL, password: ADMIN_PASSWORD, acceptTerms: true },
   })
   const response = register.ok()
     ? register

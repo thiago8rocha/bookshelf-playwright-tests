@@ -74,7 +74,7 @@ test.describe('Accessibility @a11y', () => {
     await expect(page.getByTestId('login-button')).toBeFocused()
   })
 
-  test('register form: tab order is name → email → password → roles → button', async ({ page }) => {
+  test('register form: tab order is name → email → password → next, then roles → terms → button', async ({ page }) => {
     await page.goto('/register')
     await page.waitForSelector('[data-testid="register-page"]')
 
@@ -85,13 +85,22 @@ test.describe('Accessibility @a11y', () => {
     await page.keyboard.press('Tab')
     await expect(page.getByTestId('password-input')).toBeFocused()
 
-    for (const role of ['reader', 'buyer', 'seller']) {
+    await page.keyboard.press('Tab')
+    await expect(page.getByTestId('register-next-button')).toBeFocused()
+
+    await page.getByTestId('name-input').fill('Ana Teste')
+    await page.getByTestId('email-input').fill('ana.teste@example.com')
+    await page.getByTestId('password-input').fill('Test@123456')
+    await page.keyboard.press('Enter')
+    await page.getByTestId('register-role-reader').focus()
+
+    for (const role of ['buyer', 'seller']) {
       await page.keyboard.press('Tab')
       await expect(page.getByTestId(`register-role-${role}`)).toBeFocused()
     }
 
     await page.keyboard.press('Tab')
-    await expect(page.getByTestId('register-button')).toBeFocused()
+    await expect(page.getByTestId('accept-terms-checkbox')).toBeFocused()
   })
 
   test('all interactive elements have visible focus indicators', async ({ page }) => {

@@ -66,7 +66,7 @@ export async function createUser(
   const creds = credentials ?? generateCredentials()
 
   const resp = await request.post(`${API_URL}/api/auth/register`, {
-    data: { name: creds.name, email: creds.email, password: creds.password },
+    data: { name: creds.name, email: creds.email, password: creds.password, acceptTerms: true },
   })
 
   if (!resp.ok()) {
