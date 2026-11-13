@@ -6,19 +6,18 @@ const bodyBackground = (page: import('@playwright/test').Page) =>
 test.describe('Theme', () => {
   test('lets the user pick light, dark or system and remembers the choice', async ({ authenticatedPage: page }) => {
     const html = page.locator('html')
-    const select = page.getByTestId('theme-select')
 
-    await expect(select).toHaveValue('system')
+    await expect(page.getByTestId('theme-system')).toHaveAttribute('aria-pressed', 'true')
     await expect(html).not.toHaveAttribute('data-theme', /.*/)
 
-    await select.selectOption('dark')
+    await page.getByTestId('theme-dark').click()
     await expect(html).toHaveAttribute('data-theme', 'dark')
 
     await page.reload()
     await expect(html).toHaveAttribute('data-theme', 'dark')
-    await expect(page.getByTestId('theme-select')).toHaveValue('dark')
+    await expect(page.getByTestId('theme-dark')).toHaveAttribute('aria-pressed', 'true')
 
-    await page.getByTestId('theme-select').selectOption('system')
+    await page.getByTestId('theme-system').click()
     await expect(html).not.toHaveAttribute('data-theme', /.*/)
   })
 
@@ -44,7 +43,7 @@ test.describe('Theme', () => {
     await page.goto('/login')
     const system = await bodyBackground(page)
 
-    await page.getByTestId('theme-select').selectOption('light')
+    await page.getByTestId('theme-light').click()
 
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'light')
     expect(await bodyBackground(page)).not.toBe(system)
