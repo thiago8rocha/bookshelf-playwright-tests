@@ -1,1 +1,1 @@
-{"id":"3bdfd88e4c4f486e284d1af0a7e1081e.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-import-cover.spec.ts:112:7","name":"falls back to a placeholder when the cover cannot be loaded","status":"passed","testResultsByEnv":{"default":"872d86ab0b9c26532f456d340dfbe43e"}}
+{"id":"3bdfd88e4c4f486e284d1af0a7e1081e.b444eb0fbe6390c71e68b51dd25701fc","fullName":"books/books-import-cover.spec.ts:114:7","name":"falls back to a placeholder when the cover cannot be loaded","status":"passed","testResultsByEnv":{"default":"921892add47c4c49417056dd922b0eb0"}}

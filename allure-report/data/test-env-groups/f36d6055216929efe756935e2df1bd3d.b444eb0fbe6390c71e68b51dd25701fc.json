@@ -1,1 +1,1 @@
-{"id":"f36d6055216929efe756935e2df1bd3d.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:182:7","name":"the cart is grouped by seller and survives a reload","status":"failed","testResultsByEnv":{"default":"13a3da0d835a23f26274a5b27de308c8"}}
+{"id":"f36d6055216929efe756935e2df1bd3d.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:182:7","name":"the cart is grouped by seller and survives a reload","status":"passed","testResultsByEnv":{"default":"6ecf77bf8e2052e7ee1d054f071daa45"}}
