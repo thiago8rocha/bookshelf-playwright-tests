@@ -1,5 +1,6 @@
 import { test, expect } from '../../fixtures'
 import { createBook, createUser } from '../../helpers/api'
+import { openUserMenu } from '../../helpers/navigation'
 
 const API_URL = process.env.API_URL || 'http://localhost:3000'
 
@@ -55,6 +56,7 @@ test.describe('Playground — bugs a user switches on', () => {
   })
 
   test('the playground is reachable from the header', async ({ authenticatedPage: page }) => {
+    await openUserMenu(page)
     await page.getByTestId('nav-playground').click()
 
     await expect(page).toHaveURL(/\/playground/)

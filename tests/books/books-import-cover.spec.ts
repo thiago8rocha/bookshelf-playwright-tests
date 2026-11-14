@@ -66,6 +66,7 @@ test.describe('Books — Google Books import and covers', () => {
     await dashboard.addBookButton.click()
     await modal.waitForOpen()
 
+    await page.getByTestId('book-mode-import').click()
     await page.getByTestId('google-books-query').fill('imported')
     await page.getByTestId('google-books-search-button').click()
     await page.getByTestId('google-books-result-0').click()
@@ -90,6 +91,7 @@ test.describe('Books — Google Books import and covers', () => {
 
     await new DashboardPage(page).addBookButton.click()
     await new BookModal(page).waitForOpen()
+    await page.getByTestId('book-mode-import').click()
     await page.getByTestId('google-books-query').fill('zzz')
     await page.getByTestId('google-books-search-button').click()
 

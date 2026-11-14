@@ -1,4 +1,5 @@
 import { test, expect } from '../../fixtures'
+import { signOut } from '../../helpers/navigation'
 import { LoginPage } from '../../helpers/pages'
 
 test.describe('Session', () => {
@@ -20,14 +21,14 @@ test.describe('Session', () => {
   // ─── Logout ───────────────────────────────────────────────────────────────
 
   test('logout clears session and redirects to login', async ({ authenticatedPage: page }) => {
-    await page.click('text=Sair')
+    await signOut(page)
 
     await expect(page).toHaveURL(/\/login/)
     await expect(page.getByTestId('login-page')).toBeVisible()
   })
 
   test('token is removed from localStorage after logout', async ({ authenticatedPage: page }) => {
-    await page.click('text=Sair')
+    await signOut(page)
 
     const token = await page.evaluate(() => localStorage.getItem('token'))
     expect(token).toBeNull()
@@ -37,7 +38,7 @@ test.describe('Session', () => {
   })
 
   test('back button after logout does not restore session', async ({ authenticatedPage: page }) => {
-    await page.click('text=Sair')
+    await signOut(page)
     await expect(page).toHaveURL(/\/login/)
 
     await page.goBack()
@@ -48,7 +49,7 @@ test.describe('Session', () => {
   })
 
   test('dashboard not accessible after logout via direct URL', async ({ authenticatedPage: page }) => {
-    await page.click('text=Sair')
+    await signOut(page)
     await expect(page).toHaveURL(/\/login/)
 
     await page.goto('/dashboard')

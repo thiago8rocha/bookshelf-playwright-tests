@@ -1,4 +1,5 @@
 import { test, expect } from '../../fixtures'
+import { signOut } from '../../helpers/navigation'
 import { LoginPage, RegisterPage, DashboardPage, BookModal, DeleteModal } from '../../helpers/pages'
 import { generateCredentials, generateBook, createUser } from '../../helpers/api'
 
@@ -53,7 +54,7 @@ test.describe('E2E — User Journeys', () => {
     await expect.poll(() => dashboard.getTotalBooks()).toBe(0)
 
     // 6. Logout
-    await page.click('text=Sair')
+    await signOut(page)
     await expect(page).toHaveURL(/\/login/)
   })
 
@@ -118,7 +119,7 @@ test.describe('E2E — User Journeys', () => {
     await modal.waitForClose()
 
     // Logout
-    await page.click('text=Sair')
+    await signOut(page)
     await expect(page).toHaveURL(/\/login/)
 
     // Session 2 — book should still be there

@@ -1,4 +1,5 @@
 import { test, expect } from '../../fixtures'
+import { openUserMenu } from '../../helpers/navigation'
 
 const bodyBackground = (page: import('@playwright/test').Page) =>
   page.evaluate(() => getComputedStyle(document.body).backgroundColor)
@@ -7,6 +8,7 @@ test.describe('Theme', () => {
   test('lets the user pick light, dark or system and remembers the choice', async ({ authenticatedPage: page }) => {
     const html = page.locator('html')
 
+    await openUserMenu(page)
     await expect(page.getByTestId('theme-system')).toHaveAttribute('aria-pressed', 'true')
     await expect(html).not.toHaveAttribute('data-theme', /.*/)
 
@@ -15,6 +17,7 @@ test.describe('Theme', () => {
 
     await page.reload()
     await expect(html).toHaveAttribute('data-theme', 'dark')
+    await openUserMenu(page)
     await expect(page.getByTestId('theme-dark')).toHaveAttribute('aria-pressed', 'true')
 
     await page.getByTestId('theme-system').click()
