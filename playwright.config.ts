@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv'
 import { defineBddConfig } from 'playwright-bdd'
 dotenv.config()
 
-defineBddConfig({
+const bddDir = defineBddConfig({
   features: 'features/**/*.feature',
   steps: ['steps/**/*.ts', 'fixtures/index.ts'],
   outputDir: 'tests/_bdd',
@@ -32,19 +32,17 @@ export default defineConfig({
     navigationTimeout: 15_000,
   },
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    { name: 'chromium', use: { ...devices['Desktop Chrome'] }, testIgnore: '**/_bdd/**' },
+    { name: 'firefox', use: { ...devices['Desktop Firefox'] }, testIgnore: '**/_bdd/**' },
     {
       name: 'mobile-chrome',
       use: { ...devices['Pixel 5'] },
       testMatch: ['**/auth/**', '**/dashboard/**', '**/visual/**'],
+      testIgnore: '**/_bdd/**',
     },
+    { name: 'chromium-bdd', testDir: bddDir, use: { ...devices['Desktop Chrome'] } },
+    { name: 'firefox-bdd', testDir: bddDir, use: { ...devices['Desktop Firefox'] } },
+    { name: 'mobile-chrome-bdd', testDir: bddDir, use: { ...devices['Pixel 5'] } },
   ],
   expect: {
     // Visual regression threshold — 0.2% pixel difference allowed
