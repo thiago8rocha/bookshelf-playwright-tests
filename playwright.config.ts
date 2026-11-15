@@ -1,6 +1,13 @@
 import { defineConfig, devices } from '@playwright/test'
 import * as dotenv from 'dotenv'
+import { defineBddConfig } from 'playwright-bdd'
 dotenv.config()
+
+defineBddConfig({
+  features: 'features/**/*.feature',
+  steps: ['steps/**/*.ts', 'fixtures/index.ts'],
+  outputDir: 'tests/_bdd',
+})
 
 export default defineConfig({
   testDir: './tests',

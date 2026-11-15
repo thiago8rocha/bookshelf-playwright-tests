@@ -9,7 +9,8 @@
  *  - cleanupBooks       : auto-cleans books created during the test
  */
 
-import { test as base, expect, Page } from '@playwright/test'
+import { test as base } from 'playwright-bdd'
+import { expect, Page } from '@playwright/test'
 import {
   createUser,
   loginViaApi,

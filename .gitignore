@@ -6,3 +6,5 @@ test-results/
 allure-results/
 allure-report/
 CLAUDE.local.md
+
+tests/_bdd/
