@@ -1,1 +1,1 @@
-{"id":"81b8bdd739136f4f896290de1d29ac61.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"auth/session.spec.ts:30:7","name":"token is removed from localStorage after logout","status":"passed","testResultsByEnv":{"default":"e64fdb4ff9f998c437d0120688102e26"}}
+{"id":"81b8bdd739136f4f896290de1d29ac61.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"auth/session.spec.ts:30:7","name":"token is removed from localStorage after logout","status":"passed","testResultsByEnv":{"default":"278012901473a50211d03405e08f9a95"}}
