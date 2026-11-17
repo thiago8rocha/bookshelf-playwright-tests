@@ -1,1 +1,1 @@
-{"id":"d25026183721b14c5600058fef5f982b.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:239:7","name":"readers without the buyer role cannot open the bookstore","status":"passed","testResultsByEnv":{"default":"ed6b2be583aa6de23830878895266d5e"}}
+{"id":"d25026183721b14c5600058fef5f982b.b444eb0fbe6390c71e68b51dd25701fc","fullName":"store/store.spec.ts:239:7","name":"readers without the buyer role cannot open the bookstore","status":"passed","testResultsByEnv":{"default":"d59d4399591a25d1d298d52ae60f4db4"}}

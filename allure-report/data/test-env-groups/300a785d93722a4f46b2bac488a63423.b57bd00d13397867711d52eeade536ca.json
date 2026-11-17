@@ -1,1 +1,1 @@
-{"id":"300a785d93722a4f46b2bac488a63423.b57bd00d13397867711d52eeade536ca","fullName":"features/auth/login.feature.spec.js:37:7","name":"Malformed email is blocked","status":"passed","testResultsByEnv":{"default":"0c67eba195429bdc2838b53e564dbfdc"}}
+{"id":"300a785d93722a4f46b2bac488a63423.b57bd00d13397867711d52eeade536ca","fullName":"features/auth/login.feature.spec.js:37:7","name":"Malformed email is blocked","status":"passed","testResultsByEnv":{"default":"51e8700884e4d0ea83e3236865486483"}}
