@@ -1,1 +1,1 @@
-{"id":"60b4122bf0c693ce7be2b7b19587518f.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/company.spec.ts:52:7","name":"a CNPJ that is already registered is rejected","status":"passed","testResultsByEnv":{"default":"ecc91fdf44f67733b81d13f32c8ccf2d"}}
+{"id":"60b4122bf0c693ce7be2b7b19587518f.5bd835b0d6b1d4ada3b9f0db936e82c8","fullName":"accounts/company.spec.ts:52:7","name":"a CNPJ that is already registered is rejected","status":"passed","testResultsByEnv":{"default":"e45357944b2129dadbbdd01c2de96ae1"}}

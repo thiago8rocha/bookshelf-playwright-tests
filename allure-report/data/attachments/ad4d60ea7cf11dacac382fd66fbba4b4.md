@@ -1,0 +1,102 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - heading "Tsundoku" [level=1] [ref=e6]:
+        - link "Tsundoku" [ref=e7] [cursor=pointer]:
+          - /url: /dashboard
+          - img "Tsundoku" [ref=e8]
+      - generic [ref=e9]:
+        - navigation "Navegação principal" [ref=e10]:
+          - link "Biblioteca" [ref=e11] [cursor=pointer]:
+            - /url: /dashboard
+        - button "Menu de Visual User" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: VU
+          - img [ref=e15]
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: Total de Livros
+          - img [ref=e23]
+        - paragraph [ref=e26]: "2"
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - paragraph [ref=e29]: Quero Ler
+          - img [ref=e31]
+        - paragraph [ref=e34]: "2"
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: Lendo
+          - img [ref=e39]
+        - paragraph [ref=e43]: "0"
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - paragraph [ref=e46]: Lidos
+          - img [ref=e48]
+        - paragraph [ref=e51]: "0"
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - heading "Adicione mais livros" [level=3] [ref=e55]
+        - paragraph [ref=e56]: Continue expandindo sua coleção de livros
+        - button "Adicionar Livro" [ref=e57] [cursor=pointer]:
+          - img [ref=e58]
+          - text: Adicionar Livro
+      - img [ref=e63]
+    - generic [ref=e66]:
+      - heading "Meus Livros" [level=3] [ref=e67]
+      - search "Filtros" [ref=e68]:
+        - generic [ref=e69]:
+          - img
+          - searchbox "Buscar por título ou autor" [ref=e70]
+        - combobox "Filtrar por status" [ref=e72] [cursor=pointer]:
+          - option "Todos os status" [selected]
+          - option "Quero ler"
+          - option "Lendo"
+          - option "Lido"
+        - combobox "Filtrar por nota" [ref=e74] [cursor=pointer]:
+          - option "Todas as notas" [selected]
+          - option "5 ★"
+          - option "4 ★"
+          - option "3 ★"
+          - option "2 ★"
+          - option "1 ★"
+        - combobox "Ordenar por" [ref=e76] [cursor=pointer]:
+          - option "Mais recentes" [selected]
+          - option "Mais antigos"
+          - option "Título (A-Z)"
+          - option "Autor (A-Z)"
+          - option "Melhor avaliados"
+      - paragraph [ref=e77]: 2 livros encontrados
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e82]:
+              - heading "Livro Gamma" [level=4] [ref=e83]
+              - paragraph [ref=e84]: Autor Gamma
+            - generic [ref=e85]:
+              - button "Editar livro" [ref=e86] [cursor=pointer]:
+                - img [ref=e87]
+              - button "Excluir livro" [ref=e90] [cursor=pointer]:
+                - img [ref=e91]
+          - combobox "Status de leitura de Livro Gamma" [ref=e95] [cursor=pointer]:
+            - option "Quero ler" [selected]
+            - option "Lendo"
+            - option "Lido"
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e99]:
+              - heading "Livro Beta" [level=4] [ref=e100]
+              - paragraph [ref=e101]: Autor Beta
+            - generic [ref=e102]:
+              - button "Editar livro" [ref=e103] [cursor=pointer]:
+                - img [ref=e104]
+              - button "Excluir livro" [ref=e107] [cursor=pointer]:
+                - img [ref=e108]
+          - combobox "Status de leitura de Livro Beta" [ref=e112] [cursor=pointer]:
+            - option "Quero ler" [selected]
+            - option "Lendo"
+            - option "Lido"
+```

@@ -1,1 +1,1 @@
-{"id":"20a80eea46c01d1a19444ccf012e415d.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/register.spec.ts:74:7","name":"keeps the submit button disabled until the terms are accepted","status":"passed","testResultsByEnv":{"default":"54d544d94dbcb9b582b9691c6dcd378a"}}
+{"id":"20a80eea46c01d1a19444ccf012e415d.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/register.spec.ts:74:7","name":"keeps the submit button disabled until the terms are accepted","status":"passed","testResultsByEnv":{"default":"21766fd35aa53486e9b01167c04d49d9"}}
