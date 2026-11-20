@@ -1,1 +1,1 @@
-{"id":"0bb2b0bbc7f176d8c60f312d730ef0f0.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/admin-users.spec.ts:6:7","name":"only admins can open the user management page","status":"passed","testResultsByEnv":{"default":"01906fd7b47dc82c404b1019a55cec6a"}}
+{"id":"0bb2b0bbc7f176d8c60f312d730ef0f0.b444eb0fbe6390c71e68b51dd25701fc","fullName":"accounts/admin-users.spec.ts:6:7","name":"only admins can open the user management page","status":"passed","testResultsByEnv":{"default":"f4d2adf00d979756c6bfe6ec91fa9be2"}}
