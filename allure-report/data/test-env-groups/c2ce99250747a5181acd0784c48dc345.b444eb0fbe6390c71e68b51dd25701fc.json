@@ -1,1 +1,1 @@
-{"id":"c2ce99250747a5181acd0784c48dc345.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/register.spec.ts:94:7","name":"opens the terms of service from the sign-up form","status":"passed","testResultsByEnv":{"default":"c7729b93795a47a36ccc7c40df080b95"}}
+{"id":"c2ce99250747a5181acd0784c48dc345.b444eb0fbe6390c71e68b51dd25701fc","fullName":"auth/register.spec.ts:94:7","name":"opens the terms of service from the sign-up form","status":"passed","testResultsByEnv":{"default":"33560aed86cf8a04d2f7c02f699a5bc3"}}
