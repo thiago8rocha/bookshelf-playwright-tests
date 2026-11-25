@@ -1,1 +1,1 @@
-{"id":"0349208ad75381c42a48112318a7c631.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/terms.spec.ts:8:7","name":"the API refuses a sign-up that does not accept the terms","status":"passed","testResultsByEnv":{"default":"c8d1909f6b552a0f616bbc8fdb0052c8"}}
+{"id":"0349208ad75381c42a48112318a7c631.8e098aee18e8dfe419681df8d62d9842","fullName":"auth/terms.spec.ts:8:7","name":"the API refuses a sign-up that does not accept the terms","status":"passed","testResultsByEnv":{"default":"df0c1fc424bc334dd97291c37d26be3d"}}
