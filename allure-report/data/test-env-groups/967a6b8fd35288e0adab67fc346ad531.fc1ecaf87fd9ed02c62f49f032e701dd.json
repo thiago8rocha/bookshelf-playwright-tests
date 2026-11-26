@@ -1,1 +1,1 @@
-{"id":"967a6b8fd35288e0adab67fc346ad531.fc1ecaf87fd9ed02c62f49f032e701dd","fullName":"features/auth/login.feature.spec.js:16:7","name":"Unregistered email is rejected","status":"passed","testResultsByEnv":{"default":"5ec6d12b92f05a5115b8351b27153ecf"}}
+{"id":"967a6b8fd35288e0adab67fc346ad531.fc1ecaf87fd9ed02c62f49f032e701dd","fullName":"features/auth/login.feature.spec.js:16:7","name":"Unregistered email is rejected","status":"passed","testResultsByEnv":{"default":"0817e2ee101f6906112074380d568e35"}}
